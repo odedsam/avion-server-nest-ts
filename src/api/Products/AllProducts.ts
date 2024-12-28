@@ -1,8 +1,8 @@
-import { Product } from '../types/ProductTypes.js';
-import { ceramics } from './ceramics.js';
-import { chairs } from './chairs.js';
-import { lights } from './lights.js';
-import { plants } from './plants.js';
-import { tables } from './tables.js';
+import { Product } from 'src/types/Product';
+import { ceramics } from './ceramics';
+import { chairs } from './chairs';
+import { lights } from './lights';
+import { plants } from './plants';
+import { tables } from './tables';
 
 export const AllProducts = [ceramics, chairs, lights, plants, tables];
