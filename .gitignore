@@ -49,6 +49,8 @@ lerna-debug.log*
 
 /backend/
 
+private-for-me
+
 # Runtime data
 pids
 *.pid

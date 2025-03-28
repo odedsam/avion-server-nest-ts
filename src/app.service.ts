@@ -10,4 +10,11 @@ export class AppService {
   getPort(): string {
     return this.configService.get<string>('PORT');
   }
+  getStatus(): { [key: string]: string } {
+    return {
+      status: 'Running',
+      version: '1.0.0',
+      enviroment: this.configService.get<string>('NODE_ENV') || 'development',
+    };
+  }
 }

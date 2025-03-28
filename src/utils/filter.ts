@@ -1,24 +1,32 @@
 import { Product } from '../types/Product';
+
 export const filterFunctions = {
   filterByBrand: (category: Product[]) => {
-    return new Set(category.map((item) => item.brand));
+    const brands = new Set(category.map((item) => item.brand));
+    return brands;
   },
   filterByPriceRange: (
     category: Product[],
-    minPrice: number,
-    maxPrice: number,
-  ) => {
-    const filtered = category.filter(
-      (item: any) =>
-        item.productPrice !== undefined &&
-        item.productPrice >= minPrice &&
-        item.productPrice <= maxPrice,
-    );
+  ): Record<string, Product[]> | { message: string[] } => {
+    if (!category.length) return { message: ['No products available'] };
 
-    if (filtered.length === 0) {
-      return ['no result'];
-    }
-    return filtered.sort((a: any, b: any) => b.productPrice - a.productPrice);
+    const priceRanges = {
+      '1-99': category.filter(
+        (item) => item.productPrice >= 1 && item.productPrice <= 99,
+      ),
+      '100-199': category.filter(
+        (item) => item.productPrice >= 100 && item.productPrice <= 199,
+      ),
+      '200-299': category.filter(
+        (item) => item.productPrice >= 200 && item.productPrice <= 299,
+      ),
+      '300-399': category.filter(
+        (item) => item.productPrice >= 300 && item.productPrice <= 399,
+      ),
+    };
+
+    // Return filtered products by price ranges
+    return priceRanges;
   },
 
   filterByTags: (category: Product[]) => {
@@ -34,10 +42,14 @@ export const filterFunctions = {
   },
 
   filterByColors: (category: Product[]) => {
-    const allColors = Array.from(
-      new Set(category.flatMap((item: any) => item.colors)),
-    );
-    return allColors;
+    const colorCounts: Record<string, number> = {};
+    category.forEach((item: any) => {
+      if (!item.colors) return;
+      item.colors.forEach((color: string) => {
+        colorCounts[color] = (colorCounts[color] || 0) + 1;
+      });
+    });
+    return colorCounts;
   },
 
   filterByStock: (category: Product[]) => {

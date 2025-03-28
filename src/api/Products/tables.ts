@@ -1,4 +1,4 @@
-import { Product } from '../types/ProductTypes.js';
+import { Product } from 'src/types/Product';
 export const tables: Product[] = [
   {
     id: 1,
