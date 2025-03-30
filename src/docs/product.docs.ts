@@ -31,6 +31,7 @@ export const getProductsResponseStatus: ApiResponseOptions = {
     example: [
       { id: 1, name: 'Product A', category: 'Category 1' },
       { id: 2, name: 'Product B', category: 'Category 1' },
+      { id: 2, name: 'Product B', category: 'Category 1' },
     ],
   },
 };
