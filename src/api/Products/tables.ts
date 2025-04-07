@@ -5,8 +5,7 @@ export const tables: Product[] = [
     name: 'Table Meld',
     slug: 'Table-Meld',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableOne.webp',
+    productImage:'Tables/tableOne.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 302.57,
     category: 'tables',
@@ -40,8 +39,7 @@ export const tables: Product[] = [
     name: 'Table Bambo',
     slug: 'Table-Bambo',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwo.webp',
+    productImage:'Tables/tableTwo.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 128.03,
     category: 'tables',
@@ -75,8 +73,7 @@ export const tables: Product[] = [
     name: 'Table Orchid',
     slug: 'Table-Orchid',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThree.webp',
+    productImage:'Tables/tableThree.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 498.16,
     category: 'tables',
@@ -110,8 +107,7 @@ export const tables: Product[] = [
     name: 'Table Rose',
     slug: 'Table-Rose',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFour.webp',
+    productImage:'Tables/tableFour.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 189.0,
     category: 'tables',
@@ -145,8 +141,7 @@ export const tables: Product[] = [
     name: 'Table Ficus',
     slug: 'Table-Ficus',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFive.webp',
+    productImage:'Tables/tableFive.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 408.05,
     category: 'tables',
@@ -180,8 +175,7 @@ export const tables: Product[] = [
     name: 'Table Mofus',
     slug: 'Table-Mofus',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableSix.webp',
+    productImage:'Tables/tableSix.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 231.91,
     category: 'tables',
@@ -215,8 +209,7 @@ export const tables: Product[] = [
     name: 'Table Mor',
     slug: 'Table-Mor',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableSeven.webp',
+    productImage:'Tables/tableSeven.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 250.3,
     category: 'tables',
@@ -250,8 +243,7 @@ export const tables: Product[] = [
     name: 'Table Succulent',
     slug: 'Table-Succulent',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableEight.webp',
+    productImage:'Tables/tableEight.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 189.0,
     category: 'tables',
@@ -285,8 +277,7 @@ export const tables: Product[] = [
     name: 'Table Aloe',
     slug: 'Table-Aloe',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableNine.webp',
+    productImage:'Tables/tableNine.webp',
     productTitle: '',
     productPrice: 189.0,
     category: 'tables',
@@ -312,8 +303,7 @@ export const tables: Product[] = [
     name: 'Table Lilly',
     slug: 'Table-Lilly',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTen.webp',
+    productImage:'Tables/tableTen.webp',
     productTitle: 'Versatile Rustic Artist Table',
     productPrice: 189.0,
     category: 'tables',
@@ -339,8 +329,7 @@ export const tables: Product[] = [
     name: 'Table Fragedu',
     slug: 'Table-Fragedu',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableEleven.webp',
+    productImage:'Tables/tableEleven.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 302.57,
     category: 'tables',
@@ -374,8 +363,7 @@ export const tables: Product[] = [
     name: 'Table Marquee',
     slug: 'Table-Marquee',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwelve.webp',
+    productImage:'Tables/tableTwelve.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 128.03,
     category: 'tables',
@@ -409,8 +397,7 @@ export const tables: Product[] = [
     name: 'Table Rose',
     slug: 'Table-Rose',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirteen.webp',
+    productImage:'Tables/tableThirteen.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 474.52,
     category: 'tables',
@@ -445,8 +432,7 @@ export const tables: Product[] = [
     name: 'Table Madj',
     slug: 'Table-Madj',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFourteen.webp',
+    productImage:'Tables/tableFourteen.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 288.35,
     category: 'tables',
@@ -480,8 +466,7 @@ export const tables: Product[] = [
     name: 'Table Arem',
     slug: 'Table-Arem',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFifteen.webp',
+    productImage:'Tables/tableFifteen.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 153.62,
     category: 'tables',
@@ -516,8 +501,7 @@ export const tables: Product[] = [
     name: 'Table Cactus',
     slug: 'Table-Cactus',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableSixteen.webp',
+    productImage:'Tables/tableSixteen.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 451.69,
     category: 'tables',
@@ -551,8 +535,7 @@ export const tables: Product[] = [
     name: 'Table Zupov',
     slug: 'Table-Zupov',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableSeventeen.webp',
+    productImage:'Tables/tableSeventeen.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 250.96,
     category: 'tables',
@@ -586,8 +569,7 @@ export const tables: Product[] = [
     name: 'Table Makel',
     slug: 'Table-Makel',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableEighteen.webp',
+    productImage:'Tables/tableEighteen.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 425.83,
     category: 'tables',
@@ -622,8 +604,7 @@ export const tables: Product[] = [
     name: 'Table Zirg',
     slug: 'Table-Zirg',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableNineteen.webp',
+    productImage:'Tables/tableNineteen.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 379.59,
     category: 'tables',
@@ -657,8 +638,7 @@ export const tables: Product[] = [
     name: 'Table Wader',
     slug: 'Table-Wader',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwenty.webp',
+    productImage:'Tables/tableTwenty.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 340.14,
     category: 'tables',
@@ -693,8 +673,7 @@ export const tables: Product[] = [
     slug: 'Table-Artic',
     brand: 'Chic Solutions',
 
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyOne.webp',
+    productImage:'Tables/tableTwentyOne.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 106.14,
     category: 'tables',
@@ -729,8 +708,7 @@ export const tables: Product[] = [
     name: 'Table Erped',
     slug: 'Table-Erped',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyTwo.webp',
+    productImage:'Tables/tableTwentyTwo.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 446.97,
     category: 'tables',
@@ -764,8 +742,7 @@ export const tables: Product[] = [
     name: 'Table Rosemeric',
     slug: 'Table-Rosemeric',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyThree.webp',
+    productImage:'Tables/tableTwentyThree.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 186.69,
     category: 'tables',
@@ -800,8 +777,7 @@ export const tables: Product[] = [
     name: 'Table Sert',
     slug: 'Table-Sert',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyFour.webp',
+    productImage:'Tables/tableTwentyFour.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 156.45,
     category: 'tables',
@@ -836,8 +812,7 @@ export const tables: Product[] = [
     name: 'Table Ejando',
     slug: 'Table-Ejando',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyFive.webp',
+    productImage:'Tables/tableTwentyFive.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 424.33,
     category: 'tables',
@@ -872,8 +847,7 @@ export const tables: Product[] = [
     name: 'Table Mart',
     slug: 'Table-Mart',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentySix.webp',
+    productImage:'Tables/tableTwentySix.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 191.07,
     category: 'tables',
@@ -907,8 +881,7 @@ export const tables: Product[] = [
     name: 'Table Mezdx',
     slug: 'Table-Mezdx',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentySeven.webp',
+    productImage:'Tables/tableTwentySeven.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 354.0,
     category: 'tables',
@@ -943,8 +916,7 @@ export const tables: Product[] = [
     name: 'Table Camil',
     slug: 'Table-Camil',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyEight.webp',
+    productImage:'Tables/tableTwentyEight.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 303.9,
     category: 'tables',
@@ -978,8 +950,7 @@ export const tables: Product[] = [
     name: 'Table Andrayej',
     slug: 'Table-Andrayej',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableTwentyNine.webp',
+    productImage:'Tables/tableTwentyNine.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 119.16,
     category: 'tables',
@@ -1013,8 +984,7 @@ export const tables: Product[] = [
     name: 'Table TagenOti',
     slug: 'Table-TagenOti',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirt.webp',
+    productImage:'Tables/tableThirt.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 156.39,
     category: 'tables',
@@ -1048,8 +1018,7 @@ export const tables: Product[] = [
     name: 'Table Nehv',
     slug: 'Table-Nehv',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyOne.webp',
+    productImage:'Tables/tableThirtyOne.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 436.34,
     category: 'tables',
@@ -1083,8 +1052,7 @@ export const tables: Product[] = [
     name: 'Table Miata',
     slug: 'Table-Miata',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyTwo.webp',
+    productImage:'Tables/tableThirtyTwo.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 413.09,
     category: 'tables',
@@ -1118,8 +1086,7 @@ export const tables: Product[] = [
     name: 'Table Fucill',
     slug: 'Table-Fucill',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyThree.webp',
+    productImage:'Tables/tableThirtyThree.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 221.34,
     category: 'tables',
@@ -1153,8 +1120,7 @@ export const tables: Product[] = [
     name: 'Table Smed',
     slug: 'Table-Smed',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyFour.webp',
+    productImage:'Tables/tableThirtyFour.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 206.59,
     category: 'tables',
@@ -1188,8 +1154,7 @@ export const tables: Product[] = [
     name: 'Table WatarBorg',
     slug: 'Table-WatarBorg',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyFive.webp',
+    productImage:'Tables/tableThirtyFive.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 169.17,
     category: 'tables',
@@ -1223,8 +1188,7 @@ export const tables: Product[] = [
     name: 'Table Madam',
     slug: 'Table-Madam',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtySix.webp',
+    productImage:'Tables/tableThirtySix.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 229.04,
     category: 'tables',
@@ -1258,8 +1222,7 @@ export const tables: Product[] = [
     name: 'Table Oranim',
     slug: 'Table-Oranim',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtySeven.webp',
+    productImage:'Tables/tableThirtySeven.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 330.83,
     category: 'tables',
@@ -1293,8 +1256,7 @@ export const tables: Product[] = [
     name: 'Table Ozed',
     slug: 'Table-Ozed',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyEight.webp',
+    productImage:'Tables/tableThirtyEight.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 236.39,
     category: 'tables',
@@ -1328,8 +1290,7 @@ export const tables: Product[] = [
     name: 'Table Amid',
     slug: 'Table-Amid',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableThirtyNine.webp',
+    productImage:'Tables/tableThirtyNine.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 457.41,
     category: 'tables',
@@ -1363,8 +1324,7 @@ export const tables: Product[] = [
     name: 'Table Mutzazi',
     slug: 'Table-Mutzazi',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableForty.webp',
+    productImage:'Tables/tableForty.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 206.59,
     category: 'tables',
@@ -1399,8 +1359,7 @@ export const tables: Product[] = [
     name: 'Table Warden',
     slug: 'Table-Warden',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyOne.webp',
+    productImage:'Tables/tableFortyOne.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 169.17,
     category: 'tables',
@@ -1434,8 +1393,7 @@ export const tables: Product[] = [
     name: 'Table Guardo',
     slug: 'Table-Guardo',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyTwo.webp',
+    productImage:'Tables/tableFortyTwo.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 229.04,
     category: 'tables',
@@ -1469,8 +1427,7 @@ export const tables: Product[] = [
     name: 'Table Lipo',
     slug: 'Table-Lipo',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyThree.webp',
+    productImage:'Tables/tableFortyThree.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 330.83,
     category: 'tables',
@@ -1504,8 +1461,7 @@ export const tables: Product[] = [
     name: 'Table Erten',
     slug: 'Table-Erten',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyFour.webp',
+    productImage:'Tables/tableFortyFour.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 236.39,
     category: 'tables',
@@ -1539,8 +1495,7 @@ export const tables: Product[] = [
     name: 'Table Quar',
     slug: 'Table-Quar',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyFive.webp',
+    productImage:'Tables/tableFortyFive.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 457.41,
     category: 'tables',
@@ -1574,8 +1529,7 @@ export const tables: Product[] = [
     name: 'Table Succulent',
     slug: 'Table-Succulent',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortySix.webp',
+    productImage:'Tables/tableFortySix.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 112.55,
     category: 'tables',
@@ -1609,8 +1563,7 @@ export const tables: Product[] = [
     name: 'Table Qyeld',
     slug: 'Table-Qyeld',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortySeven.webp',
+    productImage:'Tables/tableFortySeven.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 308.58,
     category: 'tables',
@@ -1644,8 +1597,7 @@ export const tables: Product[] = [
     name: 'Table Qamit',
     slug: 'Table-Qamit',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyEight.webp',
+    productImage:'Tables/tableFortyEight.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 449.92,
     category: 'tables',
@@ -1679,8 +1631,7 @@ export const tables: Product[] = [
     name: 'Table Effen',
     slug: 'Table-Effen',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFortyNine.webp',
+    productImage:'Tables/tableFortyNine.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 477.44,
     category: 'tables',
@@ -1714,8 +1665,7 @@ export const tables: Product[] = [
     name: 'Table Stergy',
     slug: 'Table-Stergy',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFifty.webp',
+    productImage:'Tables/tableFifty.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 146.15,
     category: 'tables',
@@ -1749,8 +1699,7 @@ export const tables: Product[] = [
     name: 'Table Vandu',
     slug: 'Table-Vandu',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyOne.webp',
+    productImage:'Tables/tableFiftyOne.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 498.78,
     category: 'tables',
@@ -1784,8 +1733,7 @@ export const tables: Product[] = [
     name: 'Table Emirate',
     slug: 'Table-Emirate',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyTwo.webp',
+    productImage:'Tables/tableFiftyTwo.webp',
     productTitle: 'Elegant Modern Dining Table',
     productPrice: 467.45,
     category: 'tables',
@@ -1819,8 +1767,7 @@ export const tables: Product[] = [
     name: 'Table Thermo',
     slug: 'Table-Thermo',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyThree.webp',
+    productImage:'Tables/tableFiftyThree.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 336.77,
     category: 'tables',
@@ -1854,8 +1801,7 @@ export const tables: Product[] = [
     name: 'Table Fucciax',
     slug: 'Table-Fucciax',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyFour.webp',
+    productImage:'Tables/tableFiftyFour.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 205.74,
     category: 'tables',
@@ -1889,8 +1835,7 @@ export const tables: Product[] = [
     name: 'Table Welzey',
     slug: 'Table-Welzey',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyFive.webp',
+    productImage:'Tables/tableFiftyFive.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 169.22,
     category: 'tables',
@@ -1924,8 +1869,7 @@ export const tables: Product[] = [
     name: 'Table Amiran',
     slug: 'Table-Amiran',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftySix.webp',
+    productImage:'Tables/tableFiftySix.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 307.09,
     category: 'tables',
@@ -1959,8 +1903,7 @@ export const tables: Product[] = [
     name: 'Table Gufty',
     slug: 'Table-Gufty',
     brand: 'Chic Solutions',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftySeven.webp',
+    productImage:'Tables/tableFiftySeven.webp',
     productTitle: 'Stylish Glass Top Table',
     productPrice: 109.46,
     category: 'tables',
@@ -1994,8 +1937,7 @@ export const tables: Product[] = [
     name: 'Table Axe',
     slug: 'Table-Axe',
     brand: 'Classic Creations',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyEight.webp',
+    productImage:'Tables/tableFiftyEight.webp',
     productTitle: 'Compact Workspace Table',
     productPrice: 332.28,
     category: 'tables',
@@ -2029,8 +1971,7 @@ export const tables: Product[] = [
     name: 'Table Der',
     slug: 'Table-Der',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableFiftyNine.webp',
+    productImage:'Tables/tableFiftyNine.webp',
     productTitle: 'Durable Smooth Comfort Desk',
     productPrice: 195.89,
     category: 'tables',
@@ -2064,8 +2005,7 @@ export const tables: Product[] = [
     name: 'Table Nutey',
     slug: 'Table-Nutey',
     brand: 'Rustic Furniture',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Tables/tableSixty.webp',
+    productImage:'Tables/tableSixty.webp',
     productTitle: 'Rustic Farmhouse Table',
     productPrice: 401.48,
     category: 'tables',
