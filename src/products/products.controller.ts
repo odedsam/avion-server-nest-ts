@@ -3,7 +3,6 @@ import { ApiTags, ApiOperation, ApiQuery, ApiResponse } from '@nestjs/swagger';
 import { ProductsService } from './products.service';
 import { ProductsQueryDto } from './dto/products-query.dto';
 import { getProductOperationStatus, getProductsResponseStatus, getProductQueryStatus } from 'src/docs/product.docs';
-
 @ApiTags('products')
 @Controller('products')
 
