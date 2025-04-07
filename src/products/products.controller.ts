@@ -1,16 +1,6 @@
-import {
-  Controller,
-  Get,
-  Query,
-  UsePipes,
-  ValidationPipe,
-} from '@nestjs/common';
+import { Controller, Get, Query, UsePipes, ValidationPipe } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiQuery, ApiResponse } from '@nestjs/swagger';
-import {
-  getProductOperationStatus,
-  getProductsResponseStatus,
-  getProductQueryStatus,
-} from 'src/docs/product.docs';
+import { getProductOperationStatus, getProductsResponseStatus, getProductQueryStatus } from 'src/docs/product.docs';
 import { ProductsService } from './products.service';
 import { CategoryDto } from './dto/products.dto';
 

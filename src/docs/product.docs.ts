@@ -6,8 +6,7 @@ import {
 
 export const getProductOperationStatus: ApiOperationOptions = {
   summary: 'Get All Products',
-  description:
-    'Send All Products by offset spliced 0,25 products approximately',
+  description:'Send All Products by offset spliced 0,25 products approximately',
 };
 
 export const getProductQueryStatus: ApiQueryOptions = {

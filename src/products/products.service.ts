@@ -1,22 +1,9 @@
-import {
-  BadRequestException,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+import {BadRequestException, Injectable, NotFoundException} from '@nestjs/common';
 import { AllProducts, categories } from 'src/api/Products/AllProducts';
 import { filterFunctions } from 'src/utils/filter';
 import { CategoryDto } from './dto/products.dto';
+const {filterByBrand,filterByAvailability,filterByTags,filterByColors,filterByRating,filterByMaterial,filterByPriceRange,filterByStock} = filterFunctions;
 
-const {
-  filterByBrand,
-  filterByAvailability,
-  filterByTags,
-  filterByColors,
-  filterByRating,
-  filterByMaterial,
-  filterByPriceRange,
-  filterByStock,
-} = filterFunctions;
 interface ProductCategoryResponse {
   categoryData: any[] | any;
   categoryMetaData: any[] | any;
