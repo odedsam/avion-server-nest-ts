@@ -3,7 +3,15 @@ import { AllProducts, categories } from 'src/api/Products/AllProducts';
 import { filterFunctions } from 'src/utils/filter';
 import { CategoryDto } from './dto/products.dto';
 const {filterByBrand,filterByAvailability,filterByTags,filterByColors,filterByRating,filterByMaterial,filterByPriceRange,filterByStock} = filterFunctions;
+import { getSupabaseImageUrl } from 'src/utils/getSupabaseImageUrl';
+// import { chairs } from 'src/data/chairs.data';
 
+export const getChairsWithFullImageUrl = () => {
+  return chairs.map((chair) => ({
+    ...chair,
+    productImage: getSupabaseImageUrl(chair.productImage),
+  }));
+};
 interface ProductCategoryResponse {
   categoryData: any[] | any;
   categoryMetaData: any[] | any;

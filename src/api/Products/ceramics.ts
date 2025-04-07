@@ -6,8 +6,7 @@ export const ceramics: Product[] = [
     name: 'Handcrafted Vase',
     slug: 'Handcrafted-Vase',
     brand: 'ArtisanCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicOne.webp',
+    productImage:'Ceramics/ceramicOne.webp',
     productTitle: 'Elegant Handcrafted Ceramic Vase',
     productPrice: 45.99,
     category: 'ceramics',
@@ -42,8 +41,7 @@ export const ceramics: Product[] = [
     name: 'Decorative Bowl',
     slug: 'Decorative-Bowl',
     brand: 'RusticCharm',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwo.webp',
+    productImage:'Ceramics/ceramicTwo.webp',
     productTitle: 'Rustic Decorative Ceramic Bowl',
     productPrice: 35.5,
     category: 'ceramics',
@@ -78,8 +76,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Mug Set',
     slug: 'Ceramic-Mug-Set',
     brand: 'EverydayEssentials',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThree.webp',
+    productImage:'Ceramics/ceramicThree.webp',
     productTitle: 'Minimalist Ceramic Mug Set',
     productPrice: 25.0,
     category: 'ceramics',
@@ -114,8 +111,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Planter',
     slug: 'Ceramic-Planter',
     brand: 'GreenThumb',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFourth.webp',
+    productImage:'Ceramics/ceramicFourth.webp',
     productTitle: 'Contemporary Ceramic Planter',
     productPrice: 29.99,
     category: 'ceramics',
@@ -151,8 +147,7 @@ export const ceramics: Product[] = [
     slug: 'Serving-Platter',
     brand: 'DiningDelight',
     productTitle: 'Large Ceramic Serving Platter',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFive.webp',
+    productImage:'Ceramics/ceramicFive.webp',
     productPrice: 50.75,
     category: 'ceramics',
     material: 'Earthenware',
@@ -186,8 +181,7 @@ export const ceramics: Product[] = [
     name: 'Modern Ceramic Pitcher',
     slug: 'Modern-Ceramic-Pitcher',
     brand: 'PurePour',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicSix.webp',
+    productImage:'Ceramics/ceramicSix.webp',
     productTitle: 'Elegant Ceramic Water Pitcher',
     productPrice: 40.99,
     category: 'ceramics',
@@ -222,8 +216,7 @@ export const ceramics: Product[] = [
     name: 'Hand-Painted Ceramic Plate',
     slug: 'Hand-Painted-Ceramic-Plate',
     brand: 'ArtPlate',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicSeven.webp',
+    productImage:'Ceramics/ceramicSeven.webp',
     productTitle: 'Artistic Hand-Painted Ceramic Plate',
     productPrice: 28.25,
     category: 'ceramics',
@@ -258,8 +251,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Candle Holder',
     slug: 'Ceramic-Candle-Holder',
     brand: 'GlowCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicEight.webp',
+    productImage:'Ceramics/ceramicEight.webp',
     productTitle: 'Minimalist Ceramic Candle Holder',
     productPrice: 19.99,
     category: 'ceramics',
@@ -294,8 +286,7 @@ export const ceramics: Product[] = [
     name: 'Decorative Ceramic Coasters',
     slug: 'Decorative-Ceramic-Coasters',
     brand: 'TableGuard',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicNine.webp',
+    productImage:'Ceramics/ceramicNine.webp',
     productTitle: 'Set of 6 Ceramic Coasters',
     productPrice: 22.5,
     category: 'ceramics',
@@ -330,8 +321,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Soup Bowl',
     slug: 'Ceramic-Soup-Bowl',
     brand: 'RusticTable',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTen.webp',
+    productImage:'Ceramics/ceramicTen.webp',
     productTitle: 'Rustic Ceramic Soup Bowl',
     productPrice: 18.99,
     category: 'ceramics',
@@ -366,8 +356,7 @@ export const ceramics: Product[] = [
     name: 'Handmade Ceramic Teapot',
     slug: 'Handmade-Ceramic-Teapot',
     brand: 'TeaTradition',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicEleven.webp',
+    productImage:'Ceramics/ceramicEleven.webp',
     productTitle: 'Traditional Handmade Ceramic Teapot',
     productPrice: 65.0,
     category: 'ceramics',
@@ -402,8 +391,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Coffee Set',
     slug: 'Ceramic-Coffee-Set',
     brand: 'JavaHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwelve.webp',
+    productImage:'Ceramics/ceramicTwelve.webp',
     productTitle: 'Contemporary Ceramic Coffee Set',
     productPrice: 50.0,
     category: 'ceramics',
@@ -438,8 +426,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Egg Holder',
     slug: 'Ceramic-Egg-Holder',
     brand: 'FarmhouseFinds',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirteen.webp',
+    productImage:'Ceramics/ceramicThirteen.webp',
     productTitle: 'Stylish Ceramic Egg Holder',
     productPrice: 12.75,
     category: 'ceramics',
@@ -474,8 +461,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Utensil Holder',
     slug: 'Ceramic-Utensil-Holder',
     brand: 'KitchenEssentials',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFourteen.webp',
+    productImage:'Ceramics/ceramicFourteen.webp',
     productTitle: 'Elegant Ceramic Utensil Holder',
     productPrice: 25.99,
     category: 'ceramics',
@@ -510,8 +496,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Napkin Holder',
     slug: 'Ceramic-Napkin-Holder',
     brand: 'TableCharm',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFifteen.webp',
+    productImage:'Ceramics/ceramicFifteen.webp',
     productTitle: 'Decorative Ceramic Napkin Holder',
     productPrice: 17.25,
     category: 'ceramics',
@@ -546,8 +531,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Butter Dish',
     slug: 'Ceramic-Butter-Dish',
     brand: 'RusticSpread',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicSixteen.webp',
+    productImage:'Ceramics/ceramicSixteen.webp',
     productTitle: 'Modern Ceramic Butter Dish',
     productPrice: 14.5,
     category: 'ceramics',
@@ -582,8 +566,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Storage Jar',
     slug: 'Ceramic-Storage-Jar',
     brand: 'HarvestStorage',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicSeventeen.webp',
+    productImage:'Ceramics/ceramicSeventeen.webp',
     productTitle: 'Rustic Ceramic Storage Jar',
     productPrice: 30.75,
     category: 'ceramics',
@@ -618,8 +601,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Jewelry Dish',
     slug: 'Ceramic-Jewelry-Dish',
     brand: 'JewelsNest',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicEighteen.webp',
+    productImage:'Ceramics/ceramicEighteen.webp',
     productTitle: 'Elegant Ceramic Jewelry Dish',
     productPrice: 18.99,
     category: 'ceramics',
@@ -654,8 +636,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Plant Pot',
     slug: 'Ceramic-Plant-Pot',
     brand: 'GreenScape',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicNineteen.webp',
+    productImage:'Ceramics/ceramicNineteen.webp',
     productTitle: 'Minimalist Ceramic Plant Pot',
     productPrice: 32.5,
     category: 'ceramics',
@@ -690,8 +671,7 @@ export const ceramics: Product[] = [
     name: 'Decorative Ceramic Bowl',
     slug: 'Decorative-Ceramic-Bowl',
     brand: 'CraftedDecor',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwenty.webp',
+    productImage:'Ceramics/ceramicTwenty.webp',
     productTitle: 'Handcrafted Decorative Ceramic Bowl',
     productPrice: 42.75,
     category: 'ceramics',
@@ -726,8 +706,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Salad Bowl',
     slug: 'Ceramic-Salad-Bowl',
     brand: 'HarvestHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyOne.webp',
+    productImage:'Ceramics/ceramicTwentyOne.webp',
     productTitle: 'Large Ceramic Salad Bowl',
     productPrice: 38.5,
     category: 'ceramics',
@@ -762,8 +741,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Oil Dispenser',
     slug: 'Ceramic-Oil-Dispenser',
     brand: 'OliveBranch',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyTwo.webp',
+    productImage:'Ceramics/ceramicTwentyTwo.webp',
     productTitle: 'Stylish Ceramic Oil Dispenser',
     productPrice: 20.99,
     category: 'ceramics',
@@ -798,8 +776,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Honey Pot',
     slug: 'Ceramic-Honey-Pot',
     brand: 'SweetHive',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyThree.webp',
+    productImage:'Ceramics/ceramicTwentyThree.webp',
     productTitle: 'Traditional Ceramic Honey Pot',
     productPrice: 16.99,
     category: 'ceramics',
@@ -834,8 +811,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Pasta Bowl',
     slug: 'Ceramic-Pasta-Bowl',
     brand: 'CulinaryArts',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyFour.webp',
+    productImage:'Ceramics/ceramicTwentyFour.webp',
     productTitle: 'Large Ceramic Pasta Bowl',
     productPrice: 28.99,
     category: 'ceramics',
@@ -870,8 +846,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Tea Infuser',
     slug: 'Ceramic-Tea-Infuser',
     brand: 'ZenBrew',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyFive.webp',
+    productImage:'Ceramics/ceramicTwentyFive.webp',
     productTitle: 'Elegant Ceramic Tea Infuser',
     productPrice: 15.5,
     category: 'ceramics',
@@ -906,8 +881,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Snack Tray',
     slug: 'Ceramic-Snack-Tray',
     brand: 'HostEssentials',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentySix.webp',
+    productImage:'Ceramics/ceramicTwentySix.webp',
     productTitle: 'Contemporary Ceramic Snack Tray',
     productPrice: 22.99,
     category: 'ceramics',
@@ -942,8 +916,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Tart Dish',
     slug: 'Ceramic-Tart-Dish',
     brand: 'BakeCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentySeven.webp',
+    productImage:'Ceramics/ceramicTwentySeven.webp',
     productTitle: 'Rustic Ceramic Tart Dish',
     productPrice: 24.99,
     category: 'ceramics',
@@ -978,8 +951,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Mixing Bowl Set',
     slug: 'Ceramic-Mixing-Bowl-Set',
     brand: "Baker'sChoice",
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyEight.webp',
+    productImage:'Ceramics/ceramicTwentyEight.webp',
     productTitle: 'Set of 3 Ceramic Mixing Bowls',
     productPrice: 45.0,
     category: 'ceramics',
@@ -1014,8 +986,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Gravy Boat',
     slug: 'Ceramic-Gravy-Boat',
     brand: 'TableElegance',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicTwentyNine.webp',
+    productImage:'Ceramics/ceramicTwentyNine.webp',
     productTitle: 'Classic Ceramic Gravy Boat',
     productPrice: 18.99,
     category: 'ceramics',
@@ -1050,8 +1021,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Salt and Pepper Shakers',
     slug: 'Ceramic-Salt-and-Pepper-Shakers',
     brand: 'SpiceArts',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirty.webp',
+    productImage:'Ceramics/ceramicThirty.webp',
     productTitle: 'Vintage Ceramic Salt and Pepper Shakers',
     productPrice: 12.75,
     category: 'ceramics',
@@ -1086,8 +1056,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Fruit Bowl',
     slug: 'Ceramic-Fruit-Bowl',
     brand: 'NatureCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyOne.webp',
+    productImage:'Ceramics/ceramicThirtyOne.webp',
     productTitle: 'Handmade Ceramic Fruit Bowl',
     productPrice: 35.5,
     category: 'ceramics',
@@ -1122,8 +1091,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Serving Dish',
     slug: 'Ceramic-Serving-Dish',
     brand: 'TableTopGrace',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyTwo.webp',
+    productImage:'Ceramics/ceramicThirtyTwo.webp',
     productTitle: 'Large Ceramic Serving Dish',
     productPrice: 40.0,
     category: 'ceramics',
@@ -1158,8 +1126,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Bread Basket',
     slug: 'Ceramic-Bread-Basket',
     brand: 'RusticTable',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyThree.webp',
+    productImage:'Ceramics/ceramicThirtyThree.webp',
     productTitle: 'Rustic Ceramic Bread Basket',
     productPrice: 32.75,
     category: 'ceramics',
@@ -1194,8 +1161,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Ice Cream Bowl',
     slug: 'Ceramic-Ice-Cream-Bowl',
     brand: 'FrostyDelights',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyFour.webp',
+    productImage:'Ceramics/ceramicThirtyFour.webp',
     productTitle: 'Set of 4 Ceramic Ice Cream Bowls',
     productPrice: 20.0,
     category: 'ceramics',
@@ -1230,8 +1196,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Soup Tureen',
     slug: 'Ceramic-Soup-Tureen',
     brand: 'ClassicHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyFive.webp',
+    productImage:'Ceramics/ceramicThirtyFive.webp',
     productTitle: 'Traditional Ceramic Soup Tureen',
     productPrice: 55.99,
     category: 'ceramics',
@@ -1266,8 +1231,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Salad Plates',
     slug: 'Ceramic-Salad-Plates',
     brand: 'RusticPlates',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtySix.webp',
+    productImage:'Ceramics/ceramicThirtySix.webp',
     productTitle: 'Set of 6 Ceramic Salad Plates',
     productPrice: 45.0,
     category: 'ceramics',
@@ -1302,8 +1266,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Soup Mugs',
     slug: 'Ceramic-Soup-Mugs',
     brand: 'MugMaster',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtySeven.webp',
+    productImage:'Ceramics/ceramicThirtySeven.webp',
     productTitle: 'Set of 4 Ceramic Soup Mugs',
     productPrice: 35.0,
     category: 'ceramics',
@@ -1338,8 +1301,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Chip and Dip Set',
     slug: 'Ceramic-Chip-and-Dip-Set',
     brand: 'PartyPerfect',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyEight.webp',
+    productImage:'Ceramics/ceramicThirtyEight.webp',
     productTitle: 'Ceramic Chip and Dip Serving Set',
     productPrice: 28.99,
     category: 'ceramics',
@@ -1374,8 +1336,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Rice Bowl',
     slug: 'Ceramic-Rice-Bowl',
     brand: 'NatureEssence',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicThirtyNine.webp',
+    productImage:'Ceramics/ceramicThirtyNine.webp',
     productTitle: 'Handmade Ceramic Rice Bowl',
     productPrice: 15.5,
     category: 'ceramics',
@@ -1410,8 +1371,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Gravy Jug',
     slug: 'Ceramic-Gravy-Jug',
     brand: 'SauceCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicForty.webp',
+    productImage:'Ceramics/ceramicForty.webp',
     productTitle: 'Classic Ceramic Gravy Jug',
     productPrice: 22.5,
     category: 'ceramics',
@@ -1446,8 +1406,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Cookie Jar',
     slug: 'Ceramic-Cookie-Jar',
     brand: 'CookieCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyOne.webp',
+    productImage:'Ceramics/ceramicFortyOne.webp',
     productTitle: 'Vintage Ceramic Cookie Jar',
     productPrice: 38.99,
     category: 'ceramics',
@@ -1482,8 +1441,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Pie Dish',
     slug: 'Ceramic-Pie-Dish',
     brand: 'BakeWell',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyTwo.webp',
+    productImage:'Ceramics/ceramicFortyTwo.webp',
     productTitle: 'Rustic Ceramic Pie Dish',
     productPrice: 25.99,
     category: 'ceramics',
@@ -1518,8 +1476,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Mug with Saucer',
     slug: 'Ceramic-Mug-with-Saucer',
     brand: 'SippingElegance',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyThree.webp',
+    productImage:'Ceramics/ceramicFortyThree.webp',
     productTitle: 'Modern Ceramic Mug with Saucer',
     productPrice: 18.99,
     category: 'ceramics',
@@ -1554,8 +1511,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Pet Bowl',
     slug: 'Ceramic-Pet-Bowl',
     brand: 'PetCrafters',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyFour.webp',
+    productImage:'Ceramics/ceramicFortyFour.webp',
     productTitle: 'Handcrafted Ceramic Pet Bowl',
     productPrice: 12.99,
     category: 'ceramics',
@@ -1590,8 +1546,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Dipping Bowls',
     slug: 'Ceramic-Dipping-Bowls',
     brand: 'TableTrends',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyFive.webp',
+    productImage:'Ceramics/ceramicFortyFive.webp',
     productTitle: 'Set of 4 Ceramic Dipping Bowls',
     productPrice: 20.5,
     category: 'ceramics',
@@ -1626,8 +1581,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Cheese Board',
     slug: 'Ceramic-Cheese-Board',
     brand: 'CheeseMate',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortySix.webp',
+    productImage:'Ceramics/ceramicFortySix.webp',
     productTitle: 'Elegant Ceramic Cheese Board',
     productPrice: 30.75,
     category: 'ceramics',
@@ -1662,8 +1616,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Sauce Bowl',
     slug: 'Ceramic-Sauce-Bowl',
     brand: 'SaucyServe',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortySeven.webp',
+    productImage:'Ceramics/ceramicFortySeven.webp',
     productTitle: 'Small Ceramic Sauce Bowl',
     productPrice: 10.99,
     category: 'ceramics',
@@ -1698,8 +1651,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Spoon Rest',
     slug: 'Ceramic-Spoon-Rest',
     brand: 'CookEase',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyEight.webp',
+    productImage:'Ceramics/ceramicFortyEight.webp',
     productTitle: 'Handmade Ceramic Spoon Rest',
     productPrice: 9.99,
     category: 'ceramics',
@@ -1734,8 +1686,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Cereal Bowls',
     slug: 'Ceramic-Cereal-Bowls',
     brand: 'BowlEssence',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFortyNine.webp',
+    productImage:'Ceramics/ceramicFortyNine.webp',
     productTitle: 'Set of 4 Ceramic Cereal Bowls',
     productPrice: 28.99,
     category: 'ceramics',
@@ -1770,8 +1721,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Butter Keeper',
     slug: 'Ceramic-Butter-Keeper',
     brand: 'Butterly',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFifty.webp',
+    productImage:'Ceramics/ceramicFifty.webp',
     productTitle: 'Vintage Ceramic Butter Keeper',
     productPrice: 19.99,
     category: 'ceramics',
@@ -1806,8 +1756,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Spice Jars',
     slug: 'Ceramic-Spice-Jars',
     brand: 'SpiceCharm',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFiftyOne.webp',
+    productImage:'Ceramics/ceramicFiftyOne.webp',
     productTitle: 'Set of 6 Ceramic Spice Jars',
     productPrice: 24.99,
     category: 'ceramics',
@@ -1842,8 +1791,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Coffee Canister',
     slug: 'Ceramic-Coffee-Canister',
     brand: 'BrewBuddy',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFiftyTwo.webp',
+    productImage:'Ceramics/ceramicFiftyTwo.webp',
     productTitle: 'Large Ceramic Coffee Canister',
     productPrice: 29.99,
     category: 'ceramics',
@@ -1878,8 +1826,7 @@ export const ceramics: Product[] = [
     name: 'Ceramic Ramekins',
     slug: 'Ceramic-Ramekins',
     brand: 'BakingBuddies',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Ceramics/ceramicFiftyThree.webp',
+    productImage:'Ceramics/ceramicFiftyThree.webp',
     productTitle: 'Set of 4 Ceramic Ramekins',
     productPrice: 18.5,
     category: 'ceramics',
