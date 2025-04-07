@@ -5,8 +5,7 @@ export const plants: Product[] = [
     name: 'Plant-Bambo',
     slug: 'Plant-Bambo',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantOne.webp',
+    productImage:'Plants/plantOne.webp',
     productTitle: 'Elegant Succulent',
     productPrice: 23.99,
     category: 'plants',
@@ -40,8 +39,7 @@ export const plants: Product[] = [
     name: 'Plant Cactus',
     slug: 'Plant-Cactus',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwo.webp',
+    productImage:'Plants/plantTwo.webp',
     productTitle: 'Beautiful Orchid Plant',
     productPrice: 29.99,
     category: 'plants',
@@ -75,8 +73,7 @@ export const plants: Product[] = [
     name: 'Plant Eucalyptus',
     slug: 'Plant-Eucalyptus',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThree.webp',
+    productImage:'Plants/plantThree.webp',
     productTitle: 'Charming Potted Cactus',
     productPrice: 15.99,
     category: 'plants',
@@ -110,8 +107,7 @@ export const plants: Product[] = [
     name: 'Plant Fern',
     slug: 'Plant-Fern',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFour.webp',
+    productImage:'Plants/plantFour.webp',
     productTitle: 'Vibrant Green Fern',
     productPrice: 19.99,
     category: 'plants',
@@ -145,8 +141,7 @@ export const plants: Product[] = [
     name: 'Plant-E',
     slug: 'Plant-Rose',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFive.webp',
+    productImage:'Plants/plantFive.webp',
     productTitle: 'Stunning Flowering Plant',
     productPrice: 35.99,
     category: 'plants',
@@ -180,8 +175,7 @@ export const plants: Product[] = [
     name: 'Plant Fiddle',
     slug: 'Plant-Fiddle',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantSix.webp',
+    productImage:'Plants/plantSix.webp',
     productTitle: 'Elegant Succulent',
     productPrice: 23.99,
     category: 'plants',
@@ -215,8 +209,7 @@ export const plants: Product[] = [
     name: 'Plant Philodendron',
     slug: 'Plant-Philodendron',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantSeven.webp',
+    productImage:'Plants/plantSeven.webp',
     productTitle: 'Beautiful Philodendron Plant',
     productPrice: 29.99,
     category: 'plants',
@@ -250,8 +243,7 @@ export const plants: Product[] = [
     name: 'Plant Eucal',
     slug: 'Plant-Eucal',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantEight.webp',
+    productImage:'Plants/plantEight.webp',
     productTitle: 'Charming Potted Cactus',
     productPrice: 15.99,
     category: 'plants',
@@ -285,8 +277,7 @@ export const plants: Product[] = [
     name: 'Plant Snade',
     slug: 'Plant-Snade',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plant9.webp',
+    productImage:'Plants/plant9.webp',
     productTitle: 'Vibrant Green Snade',
     productPrice: 19.99,
 
@@ -321,8 +312,7 @@ export const plants: Product[] = [
     name: 'Plant Rose',
     slug: 'Plant-Rose',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTen.webp',
+    productImage:'Plants/plantTen.webp',
     productTitle: 'Stunning Flowering Plant',
     productPrice: 35.99,
     category: 'plants',
@@ -356,8 +346,7 @@ export const plants: Product[] = [
     name: 'Plant Abelia',
     slug: 'Plant-Abelia',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantEleven.webp',
+    productImage:'Plants/plantEleven.webp',
     productTitle: 'Elegant Abelia Plant',
     productPrice: 29.99,
     category: 'plants',
@@ -391,8 +380,7 @@ export const plants: Product[] = [
     name: 'Plant AfricanMilk',
     slug: 'Plant-AfricanMilk',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwelve.webp',
+    productImage:'Plants/plantTwelve.webp',
     productTitle: 'Charming Potted AfricanMilk',
     productPrice: 22.5,
     category: 'plants',
@@ -426,8 +414,7 @@ export const plants: Product[] = [
     name: 'Plant AfricanSpear',
     slug: 'Plant-AfricanSpear',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirteen.webp',
+    productImage:'Plants/plantThirteen.webp',
     productTitle: 'Stunning Flowering Plant',
     productPrice: 45.0,
     category: 'plants',
@@ -461,8 +448,7 @@ export const plants: Product[] = [
     name: 'Plant Agapanthus',
     slug: 'Plant-Agapanthus',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFourteen.webp',
+    productImage:'Plants/plantFourteen.webp',
     productTitle: 'Elegant Fern Plant',
     productPrice: 29.99,
     category: 'plants',
@@ -496,8 +482,7 @@ export const plants: Product[] = [
     name: 'Plant AfricanIris',
     slug: 'Plant-AfricanIris',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFifteen.webp',
+    productImage:'Plants/plantFifteen.webp',
     productTitle: 'Charming Potted AfricanIris',
     productPrice: 22.5,
     category: 'plants',
@@ -531,8 +516,7 @@ export const plants: Product[] = [
     name: 'Plant Acoma',
     slug: 'Plant-Acoma',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantSixteen.webp',
+    productImage:'Plants/plantSixteen.webp',
     productTitle: 'Beautiful Indoor Plant',
     productPrice: 86.67,
     category: 'plants',
@@ -566,8 +550,7 @@ export const plants: Product[] = [
     name: 'Plant Agastache',
     slug: 'Plant-Agastache',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantSeventeen.webp',
+    productImage:'Plants/plantSeventeen.webp',
     productTitle: 'Vibrant Green Agastache',
     productPrice: 65.87,
     category: 'plants',
@@ -601,8 +584,7 @@ export const plants: Product[] = [
     name: 'Plant Daisy',
     slug: 'Plant-Daisy',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantEighteen.webp',
+    productImage:'Plants/plantEighteen.webp',
     productTitle: 'Charming Potted Daisy',
     productPrice: 45.99,
     category: 'plants',
@@ -636,8 +618,7 @@ export const plants: Product[] = [
     name: 'Plant Raby Bubber',
     slug: 'Plant-Raby-Bubber',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantNineteen.webp',
+    productImage:'Plants/plantNineteen.webp',
     productTitle: 'Elegant Rose Plant',
     productPrice: 35.0,
     category: 'plants',
@@ -671,8 +652,7 @@ export const plants: Product[] = [
     name: 'Plant Ballon Flower',
     slug: 'Plant-Ballon-Flower',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwenty.webp',
+    productImage:'Plants/plantTwenty.webp',
     productTitle: 'Vibrant Green Ballon Flower',
     productPrice: 22.5,
     category: 'plants',
@@ -706,8 +686,7 @@ export const plants: Product[] = [
     name: 'Plant Cactus',
     slug: 'Plant-Cactus',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyOne.webp',
+    productImage:'Plants/plantTwentyOne.webp',
     productTitle: 'Charming Potted Cactus',
     productPrice: 35.99,
     category: 'plants',
@@ -741,8 +720,7 @@ export const plants: Product[] = [
     name: 'Plant BachelorRose',
     slug: 'Plant-BachelorRose',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyTwo.webp',
+    productImage:'Plants/plantTwentyTwo.webp',
     productTitle: 'Elegant BachelorRose',
     productPrice: 25.5,
     category: 'plants',
@@ -776,8 +754,7 @@ export const plants: Product[] = [
     name: 'Plant Caletha',
     slug: 'Plant-Caletha',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyThree.webp',
+    productImage:'Plants/plantTwentyThree.webp',
     productTitle: 'Vibrant Green Fern',
     productPrice: 19.99,
     category: 'plants',
@@ -811,8 +788,7 @@ export const plants: Product[] = [
     name: 'Plant Cabagge',
     slug: 'Plant-Cabagge',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyFour.webp',
+    productImage:'Plants/plantTwentyFour.webp',
     productTitle: 'Charming Potted Cabagge',
     productPrice: 22.5,
     category: 'plants',
@@ -846,8 +822,7 @@ export const plants: Product[] = [
     name: 'Plant Caladium',
     slug: 'Plant-Caladium',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyFive.webp',
+    productImage:'Plants/plantTwentyFive.webp',
     productTitle: 'Beautiful Indoor Plant',
     productPrice: 86.67,
     category: 'plants',
@@ -881,8 +856,7 @@ export const plants: Product[] = [
     name: 'Plant Calateha',
     slug: 'Plant-Calateha',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentySix.webp',
+    productImage:'Plants/plantTwentySix.webp',
     productTitle: 'Vibrant Green Calateha',
     productPrice: 65.87,
     category: 'plants',
@@ -916,8 +890,7 @@ export const plants: Product[] = [
     name: 'Plant Murdyk',
     slug: 'Plant-Murdyk',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentySeven.webp',
+    productImage:'Plants/plantTwentySeven.webp',
     productTitle: 'Charming Potted Murdyk',
     productPrice: 15.99,
     category: 'plants',
@@ -951,8 +924,7 @@ export const plants: Product[] = [
     name: 'Plant Miadol',
     slug: 'Plant-Miadol',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyEight.webp',
+    productImage:'Plants/plantTwentyEight.webp',
     productTitle: 'Elegant Fern Miadol',
     productPrice: 29.99,
     category: 'plants',
@@ -986,8 +958,7 @@ export const plants: Product[] = [
     name: 'Plant Oliver',
     slug: 'Plant-Oliver',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantTwentyNine.webp',
+    productImage:'Plants/plantTwentyNine.webp',
     productTitle: 'Charming Potted Oliver',
     productPrice: 22.5,
     category: 'plants',
@@ -1021,8 +992,7 @@ export const plants: Product[] = [
     name: 'Plant Cacoon',
     slug: 'Plant-Cacoon',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirty.webp',
+    productImage:'Plants/plantThirty.webp',
     productTitle: 'Beautiful Indoor Cacoon Plant',
     productPrice: 86.67,
     category: 'plants',
@@ -1056,8 +1026,7 @@ export const plants: Product[] = [
     name: 'Plant Fusion',
     slug: 'Plant-Fusion',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyOne.webp',
+    productImage:'Plants/plantThirtyOne.webp',
     productTitle: 'Vibrant Green Fusion',
     productPrice: 65.87,
     category: 'plants',
@@ -1091,8 +1060,7 @@ export const plants: Product[] = [
     name: 'Plant Oribifolia',
     slug: 'Plant-Oribifolia',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyTwo.webp',
+    productImage:'Plants/plantThirtyTwo.webp',
     productTitle: 'Charming Potted Oribifolia',
     productPrice: 15.99,
     category: 'plants',
@@ -1126,8 +1094,7 @@ export const plants: Product[] = [
     name: 'Plant Makden',
     slug: 'Plant-Makden',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyThree.webp',
+    productImage:'Plants/plantThirtyThree.webp',
     productTitle: 'Elegant Makden Plant',
     productPrice: 35.0,
     category: 'plants',
@@ -1161,8 +1128,7 @@ export const plants: Product[] = [
     name: 'Plant Mystoc',
     slug: 'Plant-Mystoc',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyFour.webp',
+    productImage:'Plants/plantThirtyFour.webp',
     productTitle: 'Vibrant Green Mystoc',
     productPrice: 22.5,
     category: 'plants',
@@ -1196,8 +1162,7 @@ export const plants: Product[] = [
     name: 'Plant Mizz',
     slug: 'Plant-Mizz',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyFive.webp',
+    productImage:'Plants/plantThirtyFive.webp',
     productTitle: 'Charming Potted Mizz',
     productPrice: 35.99,
     category: 'plants',
@@ -1231,8 +1196,7 @@ export const plants: Product[] = [
     name: 'Plant Numera',
     slug: 'Plant-Numera',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtySix.webp',
+    productImage:'Plants/plantThirtySix.webp',
     productTitle: 'Beautiful Indoor Numera Plant',
     productPrice: 55.0,
     category: 'plants',
@@ -1266,8 +1230,7 @@ export const plants: Product[] = [
     name: 'Plant Rivera',
     slug: 'Plant-Rivera',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtySeven.webp',
+    productImage:'Plants/plantThirtySeven.webp',
     productTitle: 'Beautiful Indoor Rivera Plant',
     productPrice: 86.67,
     category: 'plants',
@@ -1301,8 +1264,7 @@ export const plants: Product[] = [
     name: 'Plant Clits',
     slug: 'Plant-Clits',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyEight.webp',
+    productImage:'Plants/plantThirtyEight.webp',
     productTitle: 'Vibrant Clits Fern',
     productPrice: 65.87,
     category: 'plants',
@@ -1336,8 +1298,7 @@ export const plants: Product[] = [
     name: 'Plant Atik',
     slug: 'Plant-Atik',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantThirtyNine.webp',
+    productImage:'Plants/plantThirtyNine.webp',
     productTitle: 'Stunning Flowering Plant',
     productPrice: 35.8,
     category: 'plants',
@@ -1371,8 +1332,7 @@ export const plants: Product[] = [
     name: 'Plant Chents',
     slug: 'Plant-Chents',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantForty.webp',
+    productImage:'Plants/plantForty.webp',
     productTitle: 'Stunning Flowering Chents Plant',
     productPrice: 60.8,
     category: 'plants',
@@ -1406,8 +1366,7 @@ export const plants: Product[] = [
     name: 'Plant Tatel',
     slug: 'Plant-Tatel',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyOne.webp',
+    productImage:'Plants/plantFortyOne.webp',
     productTitle: 'Charming Potted Tatel',
     productPrice: 92.39,
     category: 'plants',
@@ -1441,8 +1400,7 @@ export const plants: Product[] = [
     name: 'Plant Akumer',
     slug: 'Plant-Akumer',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyTwo.webp',
+    productImage:'Plants/plantFortyTwo.webp',
     productTitle: 'Stunning Flowering Plant',
     productPrice: 55.88,
     category: 'plants',
@@ -1476,8 +1434,7 @@ export const plants: Product[] = [
     name: 'Plant Fetics',
     slug: 'Plant-Fetics',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyThree.webp',
+    productImage:'Plants/plantFortyThree.webp',
     productTitle: 'Vibrant Green Fetics',
     productPrice: 54.38,
     category: 'plants',
@@ -1511,8 +1468,7 @@ export const plants: Product[] = [
     name: 'Plant Aribta',
     slug: 'Plant-Aribta',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyFour.webp',
+    productImage:'Plants/plantFortyFour.webp',
     productTitle: 'Vibrant Green Aribta',
     productPrice: 85.93,
     category: 'plants',
@@ -1546,8 +1502,7 @@ export const plants: Product[] = [
     name: 'Plant Systol',
     slug: 'Plant-Systol',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyFive.webp',
+    productImage:'Plants/plantFortyFive.webp',
     productTitle: 'Beautiful Systol Plant',
     productPrice: 23.45,
     category: 'plants',
@@ -1581,8 +1536,7 @@ export const plants: Product[] = [
     name: 'Plant Dahlia',
     slug: 'Plant-Dahlia',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortySix.webp',
+    productImage:'Plants/plantFortySix.webp',
     productTitle: 'Beautiful Indoor Dahlia Plant',
     productPrice: 17.83,
     category: 'plants',
@@ -1616,8 +1570,7 @@ export const plants: Product[] = [
     name: 'Plant Setetrial',
     slug: 'Plant-Setetrial',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortySeven.webp',
+    productImage:'Plants/plantFortySeven.webp',
     productTitle: 'Beautiful Indoor Setetrial Plant',
     productPrice: 77.92,
     category: 'plants',
@@ -1651,8 +1604,7 @@ export const plants: Product[] = [
     name: 'Plant DatePalm',
     slug: 'Plant-DatePalm',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyEight.webp',
+    productImage:'Plants/plantFortyEight.webp',
     productTitle: 'Vibrant DatePalm Fern',
     productPrice: 99.09,
     category: 'plants',
@@ -1686,8 +1638,7 @@ export const plants: Product[] = [
     name: 'Plant RedWood',
     slug: 'Plant-RedWood',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFortyNine.webp',
+    productImage:'Plants/plantFortyNine.webp',
     productTitle: 'Elegant RedWood Succulent',
     productPrice: 22.17,
     category: 'plants',
@@ -1721,8 +1672,7 @@ export const plants: Product[] = [
     name: 'Plant Delphinium',
     slug: 'Plant-Delphinium',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFifty.webp',
+    productImage:'Plants/plantFifty.webp',
     productTitle: 'Vibrant Delphinium Fern',
     productPrice: 41.46,
     category: 'plants',
@@ -1757,8 +1707,7 @@ export const plants: Product[] = [
     name: 'Plant Daphne',
     slug: 'Plant-Daphne',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyOne.webp',
+    productImage:'Plants/plantFiftyOne.webp',
     productTitle: 'Stunning Flowering Daphne Plant',
     productPrice: 96.43,
     category: 'plants',
@@ -1792,8 +1741,7 @@ export const plants: Product[] = [
     name: 'Plant EarlyHaverst',
     slug: 'Plant-EarlyHaverst',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyTwo.webp',
+    productImage:'Plants/plantFiftyTwo.webp',
     productTitle: 'Vibrant EarlyHaverst Fern',
     productPrice: 34.95,
     category: 'plants',
@@ -1827,8 +1775,7 @@ export const plants: Product[] = [
     name: 'Plant Easter',
     slug: 'Plant-Easter',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyThree.webp',
+    productImage:'Plants/plantFiftyThree.webp',
     productTitle: 'Charming Potted Easter',
     productPrice: 86.37,
     category: 'plants',
@@ -1862,8 +1809,7 @@ export const plants: Product[] = [
     name: 'Plant Welder',
     slug: 'Plant-Welder',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyFour.webp',
+    productImage:'Plants/plantFiftyFour.webp',
     productTitle: 'Charming Potted Welder',
     productPrice: 27.31,
     category: 'plants',
@@ -1897,8 +1843,7 @@ export const plants: Product[] = [
     name: 'Plant Fitaj',
     slug: 'Plant-Fitaj',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyFive.webp',
+    productImage:'Plants/plantFiftyFive.webp',
     productTitle: 'Elegant Fitaj Succulent',
     productPrice: 97.05,
     category: 'plants',
@@ -1932,8 +1877,7 @@ export const plants: Product[] = [
     name: 'Plant Ateled',
     slug: 'Plant-Ateled',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftySix.webp',
+    productImage:'Plants/plantFiftySix.webp',
     productTitle: 'Elegant Ateled Succulent',
     productPrice: 28.03,
     category: 'plants',
@@ -1967,8 +1911,7 @@ export const plants: Product[] = [
     name: 'Plant Tomato Wavy',
     slug: 'Plant-Tomato-Wavy',
     brand: 'Plant Paradise',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftySeven.webp',
+    productImage:'Plants/plantFiftySeven.webp',
     productTitle: 'Vibrant Tomato Wavy Fern',
     productPrice: 15.31,
     category: 'plants',
@@ -2002,8 +1945,7 @@ export const plants: Product[] = [
     name: 'Plant Hemlock',
     slug: 'Plant-Hemlock',
     brand: 'Green Haven',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyEight.webp',
+    productImage:'Plants/plantFiftyEight.webp',
     productTitle: 'Charming Potted Cactus',
     productPrice: 86.96,
     category: 'plants',
@@ -2037,8 +1979,7 @@ export const plants: Product[] = [
     name: 'Plant Adimer',
     slug: 'Plant-Adimer',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantFiftyNine.webp',
+    productImage:'Plants/plantFiftyNine.webp',
     productTitle: 'Vibrant Adimer Ert',
     productPrice: 54.38,
     category: 'plants',
@@ -2073,8 +2014,7 @@ export const plants: Product[] = [
     name: 'Plant Estel',
     slug: 'Plant-Estel',
     brand: 'Flora Boutique',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Plants/plantSixty.webp',
+    productImage:'Plants/plantSixty.webp',
     productTitle: 'Charming Potted Estel',
     productPrice: 68.06,
     category: 'plants',
