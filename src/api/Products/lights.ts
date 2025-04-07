@@ -6,7 +6,7 @@ export const lights: Product[] = [
     name: 'Elegant Lamp',
     slug: 'Elegant-Lamp',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightOne.webp',
+    productImage: 'Lights/lightOne.webp',
     productTitle: 'Stylish Lamp Model 1',
     productPrice: 40.12,
     category: 'lights',
@@ -25,10 +25,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -42,7 +40,7 @@ export const lights: Product[] = [
     name: 'Solar Drift',
     slug: 'Solar-Drift',
     brand: 'Eco Glow',
-    productImage:'Lights/lightTwo.webp',
+    productImage: 'Lights/lightTwo.webp',
     productTitle: 'Stylish Lamp Model 2',
     productPrice: 70.5,
     category: 'lights',
@@ -61,10 +59,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -78,7 +74,7 @@ export const lights: Product[] = [
     name: 'Nimbus Beam',
     slug: 'Nimbus-Beam',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightThree.webp',
+    productImage: 'Lights/lightThree.webp',
     productTitle: 'Stylish Lamp Model 3',
     productPrice: 85.99,
     category: 'lights',
@@ -97,10 +93,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -114,7 +108,7 @@ export const lights: Product[] = [
     name: 'Luna Spark',
     slug: 'Luna-Spark',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFour.webp',
+    productImage: 'Lights/lightFour.webp',
     productTitle: 'Stylish Lamp Model 4',
     productPrice: 120.0,
     category: 'lights',
@@ -133,10 +127,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -150,7 +142,7 @@ export const lights: Product[] = [
     name: 'Ember Wave',
     slug: 'Ember-Wave',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFive.webp',
+    productImage: 'Lights/lightFive.webp',
     productTitle: 'Stylish Lamp Model 5',
     productPrice: 110.99,
     category: 'lights',
@@ -169,10 +161,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -186,7 +176,7 @@ export const lights: Product[] = [
     name: 'Radiance Arc',
     slug: 'Radiance-Arc',
     brand: 'Eco Glow',
-    productImage:'Lights/lightSix.webp',
+    productImage: 'Lights/lightSix.webp',
     productTitle: 'Stylish Lamp Model 6',
     productPrice: 115.49,
     category: 'lights',
@@ -205,10 +195,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -222,7 +210,7 @@ export const lights: Product[] = [
     name: 'Nova Bloom',
     slug: 'Nova-Bloom',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightSeven.webp',
+    productImage: 'Lights/lightSeven.webp',
     productTitle: 'Stylish Lamp Model 7',
     productPrice: 98.6,
     category: 'lights',
@@ -241,10 +229,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -258,7 +244,7 @@ export const lights: Product[] = [
     name: 'Glimmer Arc',
     slug: 'Glimmer-Arc',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightEight.webp',
+    productImage: 'Lights/lightEight.webp',
     productTitle: 'Stylish Lamp Model 8',
     productPrice: 45.15,
     category: 'lights',
@@ -277,10 +263,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -294,7 +278,7 @@ export const lights: Product[] = [
     name: 'Halo Breeze',
     slug: 'Halo-Breeze',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightNine.webp',
+    productImage: 'Lights/lightNine.webp',
     productTitle: 'Stylish Lamp Model 9',
     productPrice: 67.72,
     category: 'lights',
@@ -313,10 +297,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -330,7 +312,7 @@ export const lights: Product[] = [
     name: 'Crystal Ray',
     slug: 'Crystal-Ray',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTen.webp',
+    productImage: 'Lights/lightTen.webp',
     productTitle: 'Stylish Lamp Model 10',
     productPrice: 29.9,
     category: 'lights',
@@ -349,10 +331,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -366,7 +346,7 @@ export const lights: Product[] = [
     name: 'Polaris Shine',
     slug: 'Polaris-Shine',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightEleven.webp',
+    productImage: 'Lights/lightEleven.webp',
     productTitle: 'Stylish Lamp Model 11',
     productPrice: 57.85,
     category: 'lights',
@@ -385,10 +365,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -402,7 +380,7 @@ export const lights: Product[] = [
     name: 'Stardust Flare',
     slug: 'Stardust-Flare',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTwelve.webp',
+    productImage: 'Lights/lightTwelve.webp',
     productTitle: 'Stylish Lamp Model 12',
     productPrice: 132.75,
     category: 'lights',
@@ -421,10 +399,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -438,7 +414,7 @@ export const lights: Product[] = [
     name: 'Dawn Whisper',
     slug: 'Dawn-Whisper',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirteen.webp',
+    productImage: 'Lights/lightThirteen.webp',
     productTitle: 'Stylish Lamp Model 13',
     productPrice: 112.99,
     category: 'lights',
@@ -457,10 +433,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -474,7 +448,7 @@ export const lights: Product[] = [
     name: 'Twilight Glow',
     slug: 'Twilight-Glow',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFourteen.webp',
+    productImage: 'Lights/lightFourteen.webp',
     productTitle: 'Stylish Lamp Model 14',
     productPrice: 137.52,
     category: 'lights',
@@ -493,10 +467,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -510,7 +482,7 @@ export const lights: Product[] = [
     name: 'Prism Pulse',
     slug: 'Prism-Pulse',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFifteen.webp',
+    productImage: 'Lights/lightFifteen.webp',
     productTitle: 'Stylish Lamp Model 15',
     productPrice: 66.43,
     category: 'lights',
@@ -533,7 +505,7 @@ export const lights: Product[] = [
     name: 'Starfall Light',
     slug: 'Starfall-Light',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightSixteen.webp',
+    productImage: 'Lights/lightSixteen.webp',
     productTitle: 'Stylish Lamp Model 16',
     productPrice: 78.61,
     category: 'lights',
@@ -552,10 +524,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -569,7 +539,7 @@ export const lights: Product[] = [
     name: 'Ember Light',
     slug: 'Ember-Light',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightSeventeen.webp',
+    productImage: 'Lights/lightSeventeen.webp',
     productTitle: 'Stylish Lamp Model 17',
     productPrice: 112.43,
     category: 'lights',
@@ -588,10 +558,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -605,7 +573,7 @@ export const lights: Product[] = [
     name: 'Zenith Glow',
     slug: 'Zenith-Glow',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightEighteen.webp',
+    productImage: 'Lights/lightEighteen.webp',
     productTitle: 'Stylish Lamp Model 18',
     productPrice: 130.33,
     category: 'lights',
@@ -624,10 +592,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -641,7 +607,7 @@ export const lights: Product[] = [
     name: 'Lumen Flux',
     slug: 'Lumen-Flux',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightNineteen.webp',
+    productImage: 'Lights/lightNineteen.webp',
     productTitle: 'Stylish Lamp Model 19',
     productPrice: 43.89,
     category: 'lights',
@@ -660,10 +626,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -677,7 +641,7 @@ export const lights: Product[] = [
     name: 'Whisper Beam',
     slug: 'Whisper-Beam',
     brand: 'Eco Glow',
-    productImage:'Lights/lightTwenty.webp',
+    productImage: 'Lights/lightTwenty.webp',
     productTitle: 'Stylish Lamp Model 20',
     productPrice: 62.53,
     category: 'lights',
@@ -696,10 +660,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -713,7 +675,7 @@ export const lights: Product[] = [
     name: 'Ember Flame',
     slug: 'Ember-Flame',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightTwentyOne.webp',
+    productImage: 'Lights/lightTwentyOne.webp',
     productTitle: 'Stylish Lamp Model 21',
     productPrice: 109.95,
     category: 'lights',
@@ -732,10 +694,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -749,7 +709,7 @@ export const lights: Product[] = [
     name: 'Radiant Dawn',
     slug: 'Radiant-Dawn',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTwentyTwo.webp',
+    productImage: 'Lights/lightTwentyTwo.webp',
     productTitle: 'Stylish Lamp Model 22',
     productPrice: 88.12,
     category: 'lights',
@@ -768,10 +728,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -785,7 +743,7 @@ export const lights: Product[] = [
     name: 'Aether Light',
     slug: 'Aether-Light',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightTwentyThree.webp',
+    productImage: 'Lights/lightTwentyThree.webp',
     productTitle: 'Stylish Lamp Model 23',
     productPrice: 125.99,
     category: 'lights',
@@ -804,10 +762,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -821,7 +777,7 @@ export const lights: Product[] = [
     name: 'Mirage Mist',
     slug: 'Mirage-Mist',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTwentyFour.webp',
+    productImage: 'Lights/lightTwentyFour.webp',
     productTitle: 'Stylish Lamp Model 24',
     productPrice: 49.49,
     category: 'lights',
@@ -840,10 +796,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -857,7 +811,7 @@ export const lights: Product[] = [
     name: 'Velvet Gleam',
     slug: 'Velvet-Gleam',
     brand: 'Eco Glow',
-    productImage:'Lights/lightTwentyFive.webp',
+    productImage: 'Lights/lightTwentyFive.webp',
     productTitle: 'Stylish Lamp Model 25',
     productPrice: 97.15,
     category: 'lights',
@@ -876,10 +830,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -893,7 +845,7 @@ export const lights: Product[] = [
     name: 'Arc Wave',
     slug: 'Arc-Wave',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTwentySix.webp',
+    productImage: 'Lights/lightTwentySix.webp',
     productTitle: 'Stylish Lamp Model 26',
     productPrice: 36.84,
     category: 'lights',
@@ -912,10 +864,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -929,7 +879,7 @@ export const lights: Product[] = [
     name: 'Halo Rise',
     slug: 'Halo-Rise',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightTwentySeven.webp',
+    productImage: 'Lights/lightTwentySeven.webp',
     productTitle: 'Stylish Lamp Model 27',
     productPrice: 75.33,
     category: 'lights',
@@ -948,10 +898,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -965,7 +913,7 @@ export const lights: Product[] = [
     name: 'Misty Halo',
     slug: 'Misty-Halo',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightTwentyEight.webp',
+    productImage: 'Lights/lightTwentyEight.webp',
     productTitle: 'Stylish Lamp Model 28',
     productPrice: 69.21,
     category: 'lights',
@@ -984,10 +932,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1001,7 +947,7 @@ export const lights: Product[] = [
     name: 'Arcadia Light',
     slug: 'Arcadia-Light',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightTwentyNine.webp',
+    productImage: 'Lights/lightTwentyNine.webp',
     productTitle: 'Stylish Lamp Model 29',
     productPrice: 99.5,
     category: 'lights',
@@ -1020,10 +966,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1037,7 +981,7 @@ export const lights: Product[] = [
     name: 'Pulse Beam',
     slug: 'Pulse-Beam',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirty.webp',
+    productImage: 'Lights/lightThirty.webp',
     productTitle: 'Stylish Lamp Model 30',
     productPrice: 73.65,
     category: 'lights',
@@ -1056,10 +1000,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1073,7 +1015,7 @@ export const lights: Product[] = [
     name: 'Daybreak Shine',
     slug: 'Daybreak-Shine',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightThirtyOne.webp',
+    productImage: 'Lights/lightThirtyOne.webp',
     productTitle: 'Stylish Lamp Model 31',
     productPrice: 56.89,
     category: 'lights',
@@ -1092,10 +1034,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1109,7 +1049,7 @@ export const lights: Product[] = [
     name: 'Ether Glow',
     slug: 'Ether-Glow',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirtyTwo.webp',
+    productImage: 'Lights/lightThirtyTwo.webp',
     productTitle: 'Stylish Lamp Model 32',
     productPrice: 37.12,
     category: 'lights',
@@ -1128,10 +1068,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1145,7 +1083,7 @@ export const lights: Product[] = [
     name: 'Aurora Sphere',
     slug: 'Aurora-Sphere',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightThirtyThree.webp',
+    productImage: 'Lights/lightThirtyThree.webp',
     productTitle: 'Stylish Lamp Model 33',
     productPrice: 42.56,
     category: 'lights',
@@ -1164,10 +1102,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1181,7 +1117,7 @@ export const lights: Product[] = [
     name: 'Zenith Ray',
     slug: 'Zenith-Ray',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirtyFour.webp',
+    productImage: 'Lights/lightThirtyFour.webp',
     productTitle: 'Stylish Lamp Model 34',
     productPrice: 92.03,
     category: 'lights',
@@ -1200,10 +1136,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1217,7 +1151,7 @@ export const lights: Product[] = [
     name: 'Arc Light',
     slug: 'Arc-Light',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightThirtyFive.webp',
+    productImage: 'Lights/lightThirtyFive.webp',
     productTitle: 'Stylish Lamp Model 35',
     productPrice: 50.84,
     category: 'lights',
@@ -1236,10 +1170,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1253,7 +1185,7 @@ export const lights: Product[] = [
     name: 'Lunar Ray',
     slug: 'Lunar-Ray',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightThirtySix.webp',
+    productImage: 'Lights/lightThirtySix.webp',
     productTitle: 'Stylish Lamp Model 36',
     productPrice: 72.46,
     category: 'lights',
@@ -1272,10 +1204,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1289,7 +1219,7 @@ export const lights: Product[] = [
     name: 'Nebula Aura',
     slug: 'Nebula-Aura',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirtySeven.webp',
+    productImage: 'Lights/lightThirtySeven.webp',
     productTitle: 'Stylish Lamp Model 37',
     productPrice: 49.12,
     category: 'lights',
@@ -1308,10 +1238,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1325,7 +1253,7 @@ export const lights: Product[] = [
     name: 'Glimmer Pulse',
     slug: 'Glimmer-Pulse',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirtyEight.webp',
+    productImage: 'Lights/lightThirtyEight.webp',
     productTitle: 'Stylish Lamp Model 38',
     productPrice: 57.37,
     category: 'lights',
@@ -1344,10 +1272,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1361,7 +1287,7 @@ export const lights: Product[] = [
     name: 'Glow Beam',
     slug: 'Glow-Beam',
     brand: 'Eco Glow',
-    productImage:'Lights/lightThirtyNine.webp',
+    productImage: 'Lights/lightThirtyNine.webp',
     productTitle: 'Stylish Lamp Model 39',
     productPrice: 129.73,
     category: 'lights',
@@ -1380,10 +1306,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1397,7 +1321,7 @@ export const lights: Product[] = [
     name: 'Ember Glow',
     slug: 'Ember-Glow',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightForty.webp',
+    productImage: 'Lights/lightForty.webp',
     productTitle: 'Stylish Lamp Model 40',
     productPrice: 58.22,
     category: 'lights',
@@ -1416,10 +1340,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1433,7 +1355,7 @@ export const lights: Product[] = [
     name: 'Solstice Shine',
     slug: 'Solstice-Shine',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFortyOne.webp',
+    productImage: 'Lights/lightFortyOne.webp',
     productTitle: 'Stylish Lamp Model 41',
     productPrice: 45.84,
     category: 'lights',
@@ -1452,10 +1374,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1469,7 +1389,7 @@ export const lights: Product[] = [
     name: 'Horizon Spark',
     slug: 'Horizon-Spark',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFortyTwo.webp',
+    productImage: 'Lights/lightFortyTwo.webp',
     productTitle: 'Stylish Lamp Model 42',
     productPrice: 66.76,
     category: 'lights',
@@ -1488,10 +1408,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1505,7 +1423,7 @@ export const lights: Product[] = [
     name: 'Nova Radiance',
     slug: 'Nova-Radiance',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFortyThree.webp',
+    productImage: 'Lights/lightFortyThree.webp',
     productTitle: 'Stylish Lamp Model 43',
     productPrice: 32.68,
     category: 'lights',
@@ -1524,10 +1442,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1541,7 +1457,7 @@ export const lights: Product[] = [
     name: 'Radiant Flux',
     slug: 'Radiant-Flux',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFortyFour.webp',
+    productImage: 'Lights/lightFortyFour.webp',
     productTitle: 'Stylish Lamp Model 44',
     productPrice: 46.22,
     category: 'lights',
@@ -1560,10 +1476,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1577,7 +1491,7 @@ export const lights: Product[] = [
     name: 'Daylight Gleam',
     slug: 'Daylight-Gleam',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFortyFive.webp',
+    productImage: 'Lights/lightFortyFive.webp',
     productTitle: 'Stylish Lamp Model 45',
     productPrice: 55.32,
     category: 'lights',
@@ -1596,10 +1510,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1613,7 +1525,7 @@ export const lights: Product[] = [
     name: 'Echo Beam',
     slug: 'Echo-Beam',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFortySix.webp',
+    productImage: 'Lights/lightFortySix.webp',
     productTitle: 'Stylish Lamp Model 46',
     productPrice: 48.59,
     category: 'lights',
@@ -1632,10 +1544,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1649,7 +1559,7 @@ export const lights: Product[] = [
     name: 'Gleam Glow',
     slug: 'Gleam-Glow',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFortySeven.webp',
+    productImage: 'Lights/lightFortySeven.webp',
     productTitle: 'Stylish Lamp Model 47',
     productPrice: 94.88,
     category: 'lights',
@@ -1668,10 +1578,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1685,7 +1593,7 @@ export const lights: Product[] = [
     name: 'Aether Spark',
     slug: 'Aether-Spark',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFortyEight.webp',
+    productImage: 'Lights/lightFortyEight.webp',
     productTitle: 'Stylish Lamp Model 48',
     productPrice: 84.73,
     category: 'lights',
@@ -1704,10 +1612,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1721,7 +1627,7 @@ export const lights: Product[] = [
     name: 'Celeste Shine',
     slug: 'Celeste-Shine',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFortyNine.webp',
+    productImage: 'Lights/lightFortyNine.webp',
     productTitle: 'Stylish Lamp Model 49',
     productPrice: 40.22,
     category: 'lights',
@@ -1740,10 +1646,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1757,7 +1661,7 @@ export const lights: Product[] = [
     name: 'Prism Ray',
     slug: 'Prism-Ray',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFifty.webp',
+    productImage: 'Lights/lightFifty.webp',
     productTitle: 'Stylish Lamp Model 50',
     productPrice: 78.62,
     category: 'lights',
@@ -1776,10 +1680,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1793,7 +1695,7 @@ export const lights: Product[] = [
     name: 'Halo Bloom',
     slug: 'Halo-Bloom',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFiftyOne.webp',
+    productImage: 'Lights/lightFiftyOne.webp',
     productTitle: 'Stylish Lamp Model 51',
     productPrice: 59.4,
     category: 'lights',
@@ -1812,10 +1714,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1829,7 +1729,7 @@ export const lights: Product[] = [
     name: 'Arcish Glow',
     slug: 'Arcish-Glow',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFiftyTwo.webp',
+    productImage: 'Lights/lightFiftyTwo.webp',
     productTitle: 'Stylish Lamp Model 52',
     productPrice: 69.75,
     category: 'lights',
@@ -1848,10 +1748,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1865,7 +1763,7 @@ export const lights: Product[] = [
     name: 'Pulse Drift',
     slug: 'Pulse-Drift',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFiftyThree.webp',
+    productImage: 'Lights/lightFiftyThree.webp',
     productTitle: 'Stylish Lamp Model 53',
     productPrice: 36.95,
     category: 'lights',
@@ -1884,10 +1782,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1901,7 +1797,7 @@ export const lights: Product[] = [
     name: 'Whisper Shine',
     slug: 'Whisper-Shine',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFiftyFour.webp',
+    productImage: 'Lights/lightFiftyFour.webp',
     productTitle: 'Stylish Lamp Model 54',
     productPrice: 97.32,
     category: 'lights',
@@ -1920,10 +1816,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1937,7 +1831,7 @@ export const lights: Product[] = [
     name: 'Nova Horizon',
     slug: 'Nova-Horizon',
     brand: 'Luxe Lighting',
-    productImage:'Lights/lightFiftyFive.webp',
+    productImage: 'Lights/lightFiftyFive.webp',
     productTitle: 'Stylish Lamp Model 55',
     productPrice: 61.27,
     category: 'lights',
@@ -1960,7 +1854,7 @@ export const lights: Product[] = [
     name: 'Sunray Glow',
     slug: 'Sunray-Glow',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFiftySix.webp',
+    productImage: 'Lights/lightFiftySix.webp',
     productTitle: 'Stylish Lamp Model 56',
     productPrice: 41.95,
     category: 'lights',
@@ -1979,10 +1873,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -1996,7 +1888,7 @@ export const lights: Product[] = [
     name: 'Glimmer Spark',
     slug: 'Glimmer-Spark',
     brand: 'Eco Glow',
-    productImage:'Lights/lightFiftySeven.webp',
+    productImage: 'Lights/lightFiftySeven.webp',
     productTitle: 'Stylish Lamp Model 57',
     productPrice: 38.74,
     category: 'lights',
@@ -2015,10 +1907,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {
@@ -2032,7 +1922,7 @@ export const lights: Product[] = [
     name: 'Dawn-Radiance',
     slug: 'Dawn-Radiance',
     brand: 'Bright Light Co.',
-    productImage:'Lights/lightFiftyEight.webp',
+    productImage: 'Lights/lightFiftyEight.webp',
     productTitle: 'Stylish Lamp Model 58',
     productPrice: 81.95,
     category: 'lights',
@@ -2051,10 +1941,8 @@ export const lights: Product[] = [
     },
     productDescription: {
       main: 'An elegant lamp that adds a touch of sophistication to any space.',
-      descOne:
-        'This lamp features a unique design that complements modern decor.',
-      descTwo:
-        'It provides excellent illumination with energy-efficient LED bulbs.',
+      descOne: 'This lamp features a unique design that complements modern decor.',
+      descTwo: 'It provides excellent illumination with energy-efficient LED bulbs.',
       descThree: 'Ideal for both home and office use.',
     },
     productDimensions: {

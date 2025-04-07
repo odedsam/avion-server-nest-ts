@@ -18,7 +18,7 @@ export const categories = {
 //   ceramics: {
 //     products: ceramics,
 //     filters: {
-//       color: ["red", "blue", "green"],
+//       color: ["red", "blue", "green"],f
 //       brand: ["Ikea", "Crate & Barrel"],
 //       material: ["ceramic", "porcelain"],
 //       priceRange: [50, 500],
