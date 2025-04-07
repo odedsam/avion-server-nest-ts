@@ -5,8 +5,7 @@ export const chairs: Product[] = [
     name: 'Modern Accent Chair',
     slug: 'Modern-Accent-Chair',
     brand: 'UrbanLuxe',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairOne.webp',
+    productImage: '/Chairs/chairOne.webp',
     productTitle: 'Stylish Modern Accent Chair',
     productPrice: 120.99,
     category: 'chairs',
@@ -40,8 +39,7 @@ export const chairs: Product[] = [
     name: 'Leather Office Chair',
     slug: 'Leather-Office-Chair',
     brand: 'OfficeComfort',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwo.webp',
+    productImage: '/Chairs/chairTwo.webp',
     productTitle: 'Ergonomic Leather Office Chair',
     productPrice: 250.0,
     category: 'chairs',
@@ -75,8 +73,7 @@ export const chairs: Product[] = [
     name: 'Dining Chair Set',
     slug: 'Dining-Chair-Set',
     brand: 'DiningElegance',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThree.webp',
+    productImage: '/Chairs/chairThree.webp',
     productTitle: 'Classic Dining Chair Set (Set of 4)',
     productPrice: 199.99,
     category: 'chairs',
@@ -110,8 +107,7 @@ export const chairs: Product[] = [
     name: 'Outdoor Patio Chair',
     slug: 'Outdoor-Patio-Chair',
     brand: 'NatureSeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFour.webp',
+    productImage: '/Chairs/chairFour.webp',
     productTitle: 'Weather-Resistant Outdoor Patio Chair',
     productPrice: 85.5,
     category: 'chairs',
@@ -145,8 +141,7 @@ export const chairs: Product[] = [
     name: 'Rocking Chair',
     slug: 'Rocking-Chair',
     brand: 'ClassicComfort',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFive.webp',
+    productImage: '/Chairs/chairFive.webp',
     productTitle: 'Classic Wooden Rocking Chair',
     productPrice: 175.0,
     category: 'chairs',
@@ -180,8 +175,7 @@ export const chairs: Product[] = [
     name: 'Folding Chair',
     slug: 'Folding-Chair',
     brand: 'PortableComfort',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairSix.webp',
+    productImage: '/Chairs/chairSix.webp',
     productTitle: 'Portable Folding Chair',
     productPrice: 35.0,
     category: 'chairs',
@@ -215,8 +209,7 @@ export const chairs: Product[] = [
     name: 'Modern Lounge Chair',
     slug: 'Modern-Lounge-Chair',
     brand: 'RelaxLounge',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairSeven.webp',
+    productImage: '/Chairs/chairSeven.webp',
     productTitle: 'Comfortable Modern Lounge Chair',
     productPrice: 120.0,
     category: 'chairs',
@@ -250,8 +243,7 @@ export const chairs: Product[] = [
     name: 'Classic Wooden Chair',
     slug: 'Classic-Wooden-Chair',
     brand: 'HeritageCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairEight.webp',
+    productImage: '/Chairs/chairEight.webp',
     productTitle: 'Elegant Classic Wooden Chair',
     productPrice: 85.0,
     category: 'chairs',
@@ -285,8 +277,7 @@ export const chairs: Product[] = [
     name: 'Industrial Metal Chair',
     slug: 'Industrial-Metal-Chair',
     brand: 'IronCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairNine.webp',
+    productImage: '/Chairs/chairNine.webp',
     productTitle: 'Industrial Metal Dining Chair',
     productPrice: 65.99,
     category: 'chairs',
@@ -320,8 +311,7 @@ export const chairs: Product[] = [
     name: 'Velvet Accent Chair',
     slug: 'Velvet-Accent-Chair',
     brand: 'LuxurySeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTen.webp',
+    productImage: '/Chairs/chairTen.webp',
     productTitle: 'Luxurious Velvet Accent Chair',
     productPrice: 140.0,
     category: 'chairs',
@@ -355,8 +345,7 @@ export const chairs: Product[] = [
     name: 'Scandinavian Dining Chair',
     slug: 'Scandinavian-Dining-Chair',
     brand: 'NordicStyle',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairEleven.webp',
+    productImage: '/Chairs/chairEleven.webp',
     productTitle: 'Minimalist Scandinavian Dining Chair',
     productPrice: 70.5,
     category: 'chairs',
@@ -390,8 +379,7 @@ export const chairs: Product[] = [
     name: 'Contemporary Armchair',
     slug: 'Contemporary-Armchair',
     brand: 'ContempoHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwelve.webp',
+    productImage: '/Chairs/chairTwelve.webp',
     productTitle: 'Comfortable Contemporary Armchair',
     productPrice: 130.99,
     category: 'chairs',
@@ -425,8 +413,7 @@ export const chairs: Product[] = [
     name: 'Outdoor Patio Chair',
     slug: 'Outdoor-Patio-Chair',
     brand: 'SunSeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirteen.webp',
+    productImage: '/Chairs/chairThirteen.webp',
     productTitle: 'Durable Outdoor Patio Chair',
     productPrice: 50.0,
     category: 'chairs',
@@ -460,8 +447,7 @@ export const chairs: Product[] = [
     name: 'Rustic Bar Stool',
     slug: 'Rustic-Bar-Stool',
     brand: 'RusticRoots',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFourteen.webp',
+    productImage: '/Chairs/chairFourteen.webp',
     productTitle: 'Rustic Wooden Bar Stool',
     productPrice: 75.5,
     category: 'chairs',
@@ -495,8 +481,7 @@ export const chairs: Product[] = [
     name: 'Mid-Century Dining Chair',
     slug: 'Mid-Century-Dining-Chair',
     brand: 'VintageVibe',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFifteen.webp',
+    productImage: '/Chairs/chairFifteen.webp',
     productTitle: 'Classic Mid-Century Dining Chair',
     productPrice: 95.0,
     category: 'chairs',
@@ -530,8 +515,7 @@ export const chairs: Product[] = [
     name: 'Swivel Desk Chair',
     slug: 'Swivel-Desk-Chair',
     brand: 'WorkSmart',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairSixteen.webp',
+    productImage: '/Chairs/chairSixteen.webp',
     productTitle: 'Adjustable Swivel Desk Chair',
     productPrice: 120.5,
     category: 'chairs',
@@ -565,8 +549,7 @@ export const chairs: Product[] = [
     name: 'Leather Lounge Chair',
     slug: 'Leather-Lounge-Chair',
     brand: 'LoungeMasters',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairSeventeen.webp',
+    productImage: '/Chairs/chairSeventeen.webp',
     productTitle: 'Luxurious Leather Lounge Chair',
     productPrice: 220.0,
     category: 'chairs',
@@ -600,8 +583,7 @@ export const chairs: Product[] = [
     name: 'Plastic Stackable Chair',
     slug: 'Plastic-Stackable-Chair',
     brand: 'EasyStack',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairEighteen.webp',
+    productImage: '/Chairs/chairEighteen.webp',
     productTitle: 'Lightweight Stackable Plastic Chair',
     productPrice: 40.0,
     category: 'chairs',
@@ -635,8 +617,7 @@ export const chairs: Product[] = [
     name: 'Papasan Chair',
     slug: 'Papasan-Chair',
     brand: 'CozyNest',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairNineteen.webp',
+    productImage: '/Chairs/chairNineteen.webp',
     productTitle: 'Comfortable Papasan Chair',
     productPrice: 160.0,
     category: 'chairs',
@@ -670,8 +651,7 @@ export const chairs: Product[] = [
     name: 'Mesh Back Office Chair',
     slug: 'Mesh-Back-Office-Chair',
     brand: 'MeshFlex',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwenty.webp',
+    productImage: '/Chairs/chairTwenty.webp',
     productTitle: 'Ergonomic Mesh Back Office Chair',
     productPrice: 130.0,
     category: 'chairs',
@@ -705,8 +685,7 @@ export const chairs: Product[] = [
     name: 'Modern Bar Stool',
     slug: 'Modern-Bar-Stool',
     brand: 'ElevateSeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyOne.webp',
+    productImage: '/Chairs/chairTwentyOne.webp',
     productTitle: 'Adjustable Modern Bar Stool',
     productPrice: 85.99,
     category: 'chairs',
@@ -740,8 +719,7 @@ export const chairs: Product[] = [
     name: 'Recliner Chair',
     slug: 'Recliner-Chair',
     brand: 'RestEase',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyTwo.webp',
+    productImage: '/Chairs/chairTwentyTwo.webp',
     productTitle: 'Ergonomic Recliner Chair',
     productPrice: 230.0,
     category: 'chairs',
@@ -775,8 +753,7 @@ export const chairs: Product[] = [
     name: 'Rattan Outdoor Chair',
     slug: 'Rattan-Outdoor-Chair',
     brand: 'EcoLiving',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyThree.webp',
+    productImage: '/Chairs/chairTwentyThree.webp',
     productTitle: 'Durable Rattan Outdoor Chair',
     productPrice: 95.0,
     category: 'chairs',
@@ -810,8 +787,7 @@ export const chairs: Product[] = [
     name: 'Wooden Dining Chair',
     slug: 'Wooden-Dining-Chair',
     brand: 'TimberClassics',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyFour.webp',
+    productImage: '/Chairs/chairTwentyFour.webp',
     productTitle: 'Classic Wooden Dining Chair',
     productPrice: 60.0,
     category: 'chairs',
@@ -845,8 +821,7 @@ export const chairs: Product[] = [
     name: 'Ergonomic Kneeling Chair',
     slug: 'Ergonomic-Kneeling-Chair',
     brand: 'PosturePerfect',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyFive.webp',
+    productImage: '/Chairs/chairTwentyFive.webp',
     productTitle: 'Ergonomic Kneeling Chair for Posture Support',
     productPrice: 150.0,
     category: 'chairs',
@@ -880,8 +855,7 @@ export const chairs: Product[] = [
     name: 'Industrial Loft Chair',
     slug: 'Industrial-Loft-Chair',
     brand: 'UrbanLoft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentySix.webp',
+    productImage: '/Chairs/chairTwentySix.webp',
     productTitle: 'Industrial Loft Style Chair',
     productPrice: 110.0,
     category: 'chairs',
@@ -915,8 +889,7 @@ export const chairs: Product[] = [
     name: 'Foldable Beach Chair',
     slug: 'Foldable-Beach-Chair',
     brand: 'SunLounger',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentySeven.webp',
+    productImage: '/Chairs/chairTwentySeven.webp',
     productTitle: 'Lightweight Foldable Beach Chair',
     productPrice: 35.0,
     category: 'chairs',
@@ -950,8 +923,7 @@ export const chairs: Product[] = [
     name: 'Classic Rocking Chair',
     slug: 'Classic-Rocking-Chair',
     brand: 'HomeHeritage',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyEight.webp',
+    productImage: '/Chairs/chairTwentyEight.webp',
     productTitle: 'Handcrafted Classic Rocking Chair',
     productPrice: 170.0,
     category: 'chairs',
@@ -985,8 +957,7 @@ export const chairs: Product[] = [
     name: 'Ergonomic Office Chair',
     slug: 'Ergonomic-Office-Chair',
     brand: 'OfficeEase',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairTwentyNine.webp',
+    productImage: '/Chairs/chairTwentyNine.webp',
     productTitle: 'Adjustable Ergonomic Office Chair',
     productPrice: 140.0,
     category: 'chairs',
@@ -1020,8 +991,7 @@ export const chairs: Product[] = [
     name: 'Retro Armchair',
     slug: 'Retro-Armchair',
     brand: 'RetroNest',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirty.webp',
+    productImage: '/Chairs/chairThirty.webp',
     productTitle: 'Vintage Retro Armchair',
     productPrice: 145.0,
     category: 'chairs',
@@ -1055,8 +1025,7 @@ export const chairs: Product[] = [
     name: 'Wooden Stool',
     slug: 'Wooden-Stool',
     brand: 'WoodCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyOne.webp',
+    productImage: '/Chairs/chairThirtyOne.webp',
     productTitle: 'Simple Wooden Stool',
     productPrice: 55.0,
     category: 'chairs',
@@ -1090,8 +1059,7 @@ export const chairs: Product[] = [
     name: 'Plastic Folding Chair',
     slug: 'Plastic-Folding-Chair',
     brand: 'EasyFold',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyTwo.webp',
+    productImage: '/Chairs/chairThirtyTwo.webp',
     productTitle: 'Compact Plastic Folding Chair',
     productPrice: 30.0,
     category: 'chairs',
@@ -1125,8 +1093,7 @@ export const chairs: Product[] = [
     name: 'Accent Wingback Chair',
     slug: 'Accent-Wingback-Chair',
     brand: 'LuxHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyThree.webp',
+    productImage: '/Chairs/chairThirtyThree.webp',
     productTitle: 'Luxurious Accent Wingback Chair',
     productPrice: 160.0,
     category: 'chairs',
@@ -1160,8 +1127,7 @@ export const chairs: Product[] = [
     name: 'Gaming Recliner Chair',
     slug: 'Gaming-Recliner-Chair',
     brand: 'GameLuxe',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyFour.webp',
+    productImage: '/Chairs/chairThirtyFour.webp',
     productTitle: 'Ergonomic Gaming Recliner Chair',
     productPrice: 240.0,
     category: 'chairs',
@@ -1195,8 +1161,7 @@ export const chairs: Product[] = [
     name: 'Bamboo Patio Chair',
     slug: 'Bamboo-Patio-Chair',
     brand: 'EcoSeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyFive.webp',
+    productImage: '/Chairs/chairThirtyFive.webp',
     productTitle: 'Eco-Friendly Bamboo Patio Chair',
     productPrice: 85.99,
     category: 'chairs',
@@ -1230,8 +1195,7 @@ export const chairs: Product[] = [
     name: 'Velvet Dining Chair',
     slug: 'Velvet-Dining-Chair',
     brand: 'DiningDeluxe',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtySix.webp',
+    productImage: '/Chairs/chairThirtySix.webp',
     productTitle: 'Elegant Velvet Dining Chair',
     productPrice: 95.0,
     category: 'chairs',
@@ -1265,8 +1229,7 @@ export const chairs: Product[] = [
     name: 'High Back Office Chair',
     slug: 'High-Back-Office-Chair',
     brand: 'ErgoElite',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtySeven.webp',
+    productImage: '/Chairs/chairThirtySeven.webp',
     productTitle: 'Ergonomic High Back Office Chair',
     productPrice: 165.0,
     category: 'chairs',
@@ -1300,8 +1263,7 @@ export const chairs: Product[] = [
     name: 'Wooden Adirondack Chair',
     slug: 'Wooden-Adirondack-Chair',
     brand: 'RusticOutdoors',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyEight.webp',
+    productImage: '/Chairs/chairThirtyEight.webp',
     productTitle: 'Classic Wooden Adirondack Chair',
     productPrice: 120.0,
     category: 'chairs',
@@ -1335,8 +1297,7 @@ export const chairs: Product[] = [
     name: 'Modern Armless Chair',
     slug: 'Modern-Armless-Chair',
     brand: 'Minimalista',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairThirtyNine.webp',
+    productImage: '/Chairs/chairThirtyNine.webp',
     productTitle: 'Minimalist Modern Armless Chair',
     productPrice: 110.0,
     category: 'chairs',
@@ -1370,8 +1331,7 @@ export const chairs: Product[] = [
     name: 'Ergonomic Task Chair',
     slug: 'Ergonomic-Task-Chair',
     brand: 'TaskMaster',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairForty.webp',
+    productImage: '/Chairs/chairForty.webp',
     productTitle: 'Adjustable Ergonomic Task Chair',
     productPrice: 130.0,
     category: 'chairs',
@@ -1405,8 +1365,7 @@ export const chairs: Product[] = [
     name: 'High Back Lounge Chair',
     slug: 'High-Back-Lounge-Chair',
     brand: 'LoungeLux',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyOne.webp',
+    productImage: '/Chairs/chairFortyOne.webp',
     productTitle: 'Luxurious High Back Lounge Chair',
     productPrice: 220.0,
     category: 'chairs',
@@ -1440,8 +1399,7 @@ export const chairs: Product[] = [
     name: 'Leather Club Chair',
     slug: 'Leather-Club-Chair',
     brand: 'VintageElite',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyTwo.webp',
+    productImage: '/Chairs/chairFortyTwo.webp',
     productTitle: 'Elegant Leather Club Chair',
     productPrice: 250.0,
     category: 'chairs',
@@ -1475,8 +1433,7 @@ export const chairs: Product[] = [
     name: 'Bohemian Hanging Chair',
     slug: 'Bohemian-Hanging-Chair',
     brand: 'FreeSpirit',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyThree.webp',
+    productImage: '/Chairs/chairFortyThree.webp',
     productTitle: 'Comfortable Bohemian Hanging Chair',
     productPrice: 180.0,
     category: 'chairs',
@@ -1510,8 +1467,7 @@ export const chairs: Product[] = [
     name: 'Contemporary Wingback Chair',
     slug: 'Contemporary-Wingback-Chair',
     brand: 'ModernHome',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyFour.webp',
+    productImage: '/Chairs/chairFortyFour.webp',
     productTitle: 'Contemporary Styled Wingback Chair',
     productPrice: 195.0,
     category: 'chairs',
@@ -1545,8 +1501,7 @@ export const chairs: Product[] = [
     name: 'Industrial Metal Stool',
     slug: 'Industrial-Metal-Stool',
     brand: 'UrbanSeat',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyFive.webp',
+    productImage: '/Chairs/chairFortyFive.webp',
     productTitle: 'Industrial Metal Bar Stool',
     productPrice: 75.0,
     category: 'chairs',
@@ -1580,8 +1535,7 @@ export const chairs: Product[] = [
     name: 'Upholstered Dining Chair',
     slug: 'Upholstered-Dining-Chair',
     brand: 'ComfortDine',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortySix.webp',
+    productImage: '/Chairs/chairFortySix.webp',
     productTitle: 'Comfortable Upholstered Dining Chair',
     productPrice: 90.0,
     category: 'chairs',
@@ -1615,8 +1569,7 @@ export const chairs: Product[] = [
     name: 'Executive Recliner Chair',
     slug: 'Executive-Recliner-Chair',
     brand: 'EliteSeating',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortySeven.webp',
+    productImage: '/Chairs/chairFortySeven.webp',
     productTitle: 'Luxurious Executive Recliner Chair',
     productPrice: 300.0,
     category: 'chairs',
@@ -1650,8 +1603,7 @@ export const chairs: Product[] = [
     name: 'Rustic Wooden Bench',
     slug: 'Rustic-Wooden-Bench',
     brand: 'TimberCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyEight.webp',
+    productImage: '/Chairs/chairFortyEight.webp',
     productTitle: 'Classic Rustic Wooden Bench',
     productPrice: 200.0,
     category: 'chairs',
@@ -1685,8 +1637,7 @@ export const chairs: Product[] = [
     name: 'Mid-Century Modern Chair',
     slug: 'Mid-Century-Modern-Chair',
     brand: 'RetroChic',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFortyNine.webp',
+    productImage: '/Chairs/chairFortyNine.webp',
     productTitle: 'Stylish Mid-Century Modern Chair',
     productPrice: 140.0,
     category: 'chairs',
@@ -1720,8 +1671,7 @@ export const chairs: Product[] = [
     name: 'Vintage Leather Chair',
     slug: 'Vintage-Leather-Chair',
     brand: 'VintageCraft',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFifty.webp',
+    productImage: '/Chairs/chairFifty.webp',
     productTitle: 'Elegant Vintage Leather Chair',
     productPrice: 265.0,
     category: 'chairs',
@@ -1755,8 +1705,7 @@ export const chairs: Product[] = [
     name: 'Swivel Bar Stool',
     slug: 'Swivel-Bar-Stool',
     brand: 'BarLife',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFiftyOne.webp',
+    productImage: '/Chairs/chairFiftyOne.webp',
     productTitle: 'Adjustable Swivel Bar Stool',
     productPrice: 105.0,
     category: 'chairs',
@@ -1790,8 +1739,7 @@ export const chairs: Product[] = [
     name: 'Classic Dining Chair',
     slug: 'Classic-Dining-Chair',
     brand: 'HomeElegance',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFiftyTwo.webp',
+    productImage: '/Chairs/chairFiftyTwo.webp',
     productTitle: 'Classic Wooden Dining Chair',
     productPrice: 85.0,
     category: 'chairs',
@@ -1825,8 +1773,7 @@ export const chairs: Product[] = [
     name: 'Modern Office Chair',
     slug: 'Modern-Office-Chair',
     brand: 'OfficeX',
-    productImage:
-      'http://localhost:5001/assets/ProductAssets/Chairs/chairFiftyThree.webp',
+    productImage: '/Chairs/chairFiftyThree.webp',
     productTitle: 'Ergonomic Modern Office Chair',
     productPrice: 145.0,
     category: 'chairs',

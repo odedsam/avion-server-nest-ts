@@ -12,9 +12,12 @@ export class ProductsController {
   @ApiOperation(getProductOperationStatus)
   @ApiResponse(getProductsResponseStatus)
   @ApiQuery(getProductQueryStatus)
+
+
   @UsePipes(new ValidationPipe({ transform: true }))
   getProducts(@Query() query: any): any {
     const categoryDTO = CategoryDto.fromQuery(query);
     return this.productService.getProductByCategory(categoryDTO);
   }
 }
+

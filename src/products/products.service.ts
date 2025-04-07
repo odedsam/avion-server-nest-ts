@@ -77,36 +77,32 @@ export class ProductsService {
     //   MetaData: this.categoryMetaData(productCategoryResponse),
     // };
 
-    // פונקציה לספירה לפי שדה
     const countByField = (data: any[], field: string, topN: number = 5) => {
       const counts = data.reduce((acc: Record<string, number>, item) => {
         const fieldValue = item[field];
 
         if (Array.isArray(fieldValue)) {
-          // אם הערך הוא מערך, לעבור על כל אחד
+
           fieldValue.forEach((value) => {
             acc[value] = (acc[value] || 0) + 1;
           });
         } else {
-          // אם הערך הוא מחרוזת או מספר
+
           acc[fieldValue] = (acc[fieldValue] || 0) + 1;
         }
 
         return acc;
       }, {});
 
-      // להחזיר את התוצאה ללא מיון
       return Object.entries(counts)
-        .slice(0, topN) // לקחת את N הראשונים אם יש הגבלה
-        .map(([key, count]) => ({ key, count })); // לחזור לפורמט קריא
+        .slice(0, topN)
+        .map(([key, count]) => ({ key, count }));
     };
 
-    // ניתוח נתונים לפי השדות המבוקשים
     const topBrands = countByField(productCategoryResponse, 'brand');
     const topColors = countByField(productCategoryResponse, 'colors');
     const topMaterials = countByField(productCategoryResponse, 'material');
 
-    // החזרת הנתונים
     return {
       // categoryData: productCategoryResponse,
       MetaData: {
