@@ -1,123 +1,102 @@
-import {BadRequestException, Injectable, NotFoundException} from '@nestjs/common';
-import { AllProducts, categories } from 'src/api/Products/AllProducts';
-import { filterFunctions } from 'src/utils/filter';
-import { CategoryDto } from './dto/products.dto';
-const {filterByBrand,filterByAvailability,filterByTags,filterByColors,filterByRating,filterByMaterial,filterByPriceRange,filterByStock} = filterFunctions;
+import { Injectable, NotFoundException } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { AllProducts, categories } from 'src/api/data';
+import { ProductsQueryDto } from './dto/products-query.dto';
+import { Product } from 'src/types/product';
+import { sortFunctions } from 'src/utils/sort';
 import { getSupabaseImageUrl } from 'src/utils/getSupabaseImageUrl';
-// import { chairs } from 'src/data/chairs.data';
 
-export const getChairsWithFullImageUrl = () => {
-  return chairs.map((chair) => ({
-    ...chair,
-    productImage: getSupabaseImageUrl(chair.productImage),
-  }));
-};
-interface ProductCategoryResponse {
-  categoryData: any[] | any;
-  categoryMetaData: any[] | any;
-}
-
-const metricTransformer = (vibrant: any) => {
-  !Array.isArray(vibrant) ? Array.from([vibrant]) : vibrant;
-  return vibrant.length;
-};
-
-// filterByColors(categoryFilters),
 @Injectable()
 export class ProductsService {
-  private readonly products = AllProducts;
+  private readonly products: Product[][] = AllProducts;
   private readonly categories = categories;
 
-  getAllProducts(): any[] {
-    return this.products.flat().slice(0, 20);
-  }
+  constructor(private readonly config: ConfigService) {}
 
-  categoryMetaData(categoryFilters: any | any[]): any[] | any {
-    const metaData = {
-      brands: {
-        metrics: metricTransformer(filterByBrand(categoryFilters)),
-        results: filterByBrand(categoryFilters),
-      },
-      avail: {
-        metrics: metricTransformer(filterByAvailability(categoryFilters)),
-        results: filterByAvailability(categoryFilters),
-      },
-      tags: {
-        metrics: metricTransformer(filterByTags(categoryFilters)),
-        results: filterByTags(categoryFilters),
-      },
-      ratings: {
-        metrics: metricTransformer(filterByRating(categoryFilters)),
-        results: filterByRating(categoryFilters),
-      },
-      materials: {
-        metrics: metricTransformer(filterByMaterial(categoryFilters)),
-        results: filterByMaterial(categoryFilters),
-      },
-      colors: {
-        metrics: metricTransformer(filterByColors(categoryFilters)),
-        results: filterByColors(categoryFilters),
-      },
-      price: {
-        metrics: metricTransformer(categoryFilters),
-        results: filterByPriceRange(categoryFilters),
-      },
-      stocks: {
-        metrics: metricTransformer(filterByStock(categoryFilters)),
-        results: filterByStock(categoryFilters),
-      },
-    };
-    return metaData;
-  }
+  getFilteredProducts(query: ProductsQueryDto) {
+    const { category, sort, priceRanges } = query;
 
-  getProductByCategory(categoryDto: CategoryDto) {
-    if (!categoryDto.category) {
-      return this.getAllProducts();
-    }
-    const category = categoryDto.category.toLowerCase();
-    if (!this.categories[category]) {
-      throw new NotFoundException(`Category ${category} not found`);
+    let baseProducts = this.products.flat();
+
+    if (category) {
+      const lower = category.toLowerCase();
+      if (!this.categories[lower]) {
+        throw new NotFoundException(`Category ${lower} not found`);
+      }
+      baseProducts = this.categories[lower];
     }
 
-    const productCategoryResponse = this.categories[category];
-    // return {
-    //   categoryData: productCategoryResponse,
-    //   MetaData: this.categoryMetaData(productCategoryResponse),
-    // };
-
-    const countByField = (data: any[], field: string, topN: number = 5) => {
-      const counts = data.reduce((acc: Record<string, number>, item) => {
-        const fieldValue = item[field];
-
-        if (Array.isArray(fieldValue)) {
-
-          fieldValue.forEach((value) => {
-            acc[value] = (acc[value] || 0) + 1;
-          });
-        } else {
-
-          acc[fieldValue] = (acc[fieldValue] || 0) + 1;
-        }
-
-        return acc;
-      }, {});
-
-      return Object.entries(counts)
-        .slice(0, topN)
-        .map(([key, count]) => ({ key, count }));
+    const filtersMeta = {
+      priceRanges: this.countPriceRanges(baseProducts),
+      colors: this.countByField(baseProducts, 'colors'),
+      brands: this.countByField(baseProducts, 'brand'),
+      materials: this.countByField(baseProducts, 'material'),
     };
 
-    const topBrands = countByField(productCategoryResponse, 'brand');
-    const topColors = countByField(productCategoryResponse, 'colors');
-    const topMaterials = countByField(productCategoryResponse, 'material');
+    let filtered = [...baseProducts];
+
+    if (priceRanges?.length) {
+      filtered = filtered.filter((p) =>
+        priceRanges.some((range) => {
+          const [min, max] = range.split('-').map(Number);
+          return p.productPrice >= min && p.productPrice <= max;
+        }),
+      );
+    }
+
+    const sortMap: Record<string, keyof typeof sortFunctions> = {
+      'price-desc': 'sortByHighPrice',
+      'price-asc': 'sortByLowPrice',
+      name: 'sortByName',
+      availability: 'sortByAvailability',
+      rating: 'sortByRating',
+      height: 'sortByHeight',
+      depth: 'sortByDepth',
+    };
+
+    if (sort && sortMap[sort]) {
+      filtered = sortFunctions[sortMap[sort]](filtered);
+    }
+
+    // ✅ Image URL injection
+    const supabaseUrlBuilder = getSupabaseImageUrl(this.config);
+
+    const productsWithImageUrls = filtered.map((product) => ({
+      ...product,
+      productImage: supabaseUrlBuilder(product.productImage),
+    }));
 
     return {
-      // categoryData: productCategoryResponse,
-      MetaData: {
-        topBrands,
-        topColors,
-        topMaterials,
-      },
+      products: productsWithImageUrls.slice(0, 30),
+      filtersMeta,
     };
+  }
+
+  private countPriceRanges(products: Product[]) {
+    const ranges = ['1-99', '100-199', '200-299', '300-399'];
+
+    return ranges.map((range) => {
+      const [min, max] = range.split('-').map(Number);
+      const count = products.filter((p) => p.productPrice >= min && p.productPrice <= max).length;
+      return { range, count };
+    });
+  }
+
+  private countByField(products: Product[], field: keyof Product) {
+    const counts: Record<string, number> = {};
+
+    products.forEach((p) => {
+      const value = p[field];
+
+      if (Array.isArray(value)) {
+        value.forEach((v) => {
+          counts[v] = (counts[v] || 0) + 1;
+        });
+      } else if (typeof value === 'string') {
+        counts[value] = (counts[value] || 0) + 1;
+      }
+    });
+
+    return Object.entries(counts).map(([key, count]) => ({ key, count }));
   }
 }

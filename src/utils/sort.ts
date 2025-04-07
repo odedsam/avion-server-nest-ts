@@ -1,14 +1,10 @@
 import { Product } from '../types/Product';
 export const sortFunctions = {
   sortByHighPrice: (category: Product[]) => {
-    return category.toSorted(
-      (a: any, b: any) => b.productPrice - a.productPrice,
-    );
+    return category.toSorted((a: any, b: any) => b.productPrice - a.productPrice);
   },
   sortByLowPrice: (category: Product[]) => {
-    return category.toSorted(
-      (a: any, b: any) => a.productPrice - b.productPrice,
-    );
+    return category.toSorted((a: any, b: any) => a.productPrice - b.productPrice);
   },
   sortByName: (category: Product[]) => {
     return category.toSorted((a: any, b: any) => a.name.localeCompare(b.name));
@@ -20,15 +16,9 @@ export const sortFunctions = {
     return category.toSorted((a: any, b: any) => b.ratings - a.ratings);
   },
   sortByHeight: (category: Product[]) => {
-    return category.toSorted(
-      (a: any, b: any) =>
-        b.shipping.dimensions.height - a.shipping.dimensions.height,
-    );
+    return category.toSorted((a: any, b: any) => b.shipping.dimensions.height - a.shipping.dimensions.height);
   },
   sortByDepth: (category: Product[]) => {
-    return category.toSorted(
-      (a: any, b: any) =>
-        b.shipping.dimensions.depth - a.shipping.dimensions.depth,
-    );
+    return category.toSorted((a: any, b: any) => b.shipping.dimensions.depth - a.shipping.dimensions.depth);
   },
 };

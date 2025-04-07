@@ -1,74 +1,70 @@
 import { Product } from '../types/Product';
 
 export const filterFunctions = {
-  filterByBrand: (category: Product[]) => {
-    const brands = new Set(category.map((item) => item.brand));
-    return brands;
-  },
-  filterByPriceRange: (
-    category: Product[],
-  ): Record<string, Product[]> | { message: string[] } => {
-    if (!category.length) return { message: ['No products available'] };
-
-    const priceRanges = {
-      '1-99': category.filter(
-        (item) => item.productPrice >= 1 && item.productPrice <= 99,
-      ),
-      '100-199': category.filter(
-        (item) => item.productPrice >= 100 && item.productPrice <= 199,
-      ),
-      '200-299': category.filter(
-        (item) => item.productPrice >= 200 && item.productPrice <= 299,
-      ),
-      '300-399': category.filter(
-        (item) => item.productPrice >= 300 && item.productPrice <= 399,
-      ),
-    };
-
-    // Return filtered products by price ranges
-    return priceRanges;
-  },
-
-  filterByTags: (category: Product[]) => {
-    const allTags = new Set(category.flatMap((item) => item.tags || []));
-    return Array.from(allTags);
-  },
-
-  filterByMaterial: (category: Product[]) => {
-    const allMaterials = new Set(
-      category.flatMap((item: any) => item.materials || []),
-    );
-    return Array.from(allMaterials);
-  },
-
-  filterByColors: (category: Product[]) => {
-    const colorCounts: Record<string, number> = {};
-    category.forEach((item: any) => {
-      if (!item.colors) return;
-      item.colors.forEach((color: string) => {
-        colorCounts[color] = (colorCounts[color] || 0) + 1;
-      });
+  filterByBrand: (products: Product[]): { key: string; count: number }[] => {
+    const counts: Record<string, number> = {};
+    products.forEach((p) => {
+      counts[p.brand] = (counts[p.brand] || 0) + 1;
     });
-    return colorCounts;
+    return Object.entries(counts).map(([key, count]) => ({ key, count }));
   },
 
-  filterByStock: (category: Product[]) => {
-    const highStockToLowStock = category.sort(
-      (bigStock: any, lowStock: any) => lowStock.stock - bigStock.stock,
+  filterByPriceRange: (products: Product[]) => {
+    const ranges = ['1-99', '100-199', '200-299', '300-399'];
+    return ranges.map((range) => {
+      const [min, max] = range.split('-').map(Number);
+      const count = products.filter((p) => p.productPrice >= min && p.productPrice <= max).length;
+      return { range, count };
+    });
+  },
+
+  filterByTags: (products: Product[]): { key: string; count: number }[] => {
+    const tagCounts: Record<string, number> = {};
+    products.forEach((p) =>
+      (p.tags || []).forEach((tag) => {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      }),
     );
-    return highStockToLowStock;
+    return Object.entries(tagCounts).map(([key, count]) => ({ key, count }));
   },
-  filterByAvailability: (category: Product[]) => {
-    const availableProducts = category.filter(
-      (product: any) => product.isAvailable,
+
+  filterByMaterial: (products: Product[]): { key: string; count: number }[] => {
+    const materialCounts: Record<string, number> = {};
+    products.forEach((p) => {
+      if (p.material) {
+        materialCounts[p.material] = (materialCounts[p.material] || 0) + 1;
+      }
+    });
+    return Object.entries(materialCounts).map(([key, count]) => ({ key, count }));
+  },
+
+  filterByColors: (products: Product[]): { key: string; count: number }[] => {
+    const colorCounts: Record<string, number> = {};
+    products.forEach((p) =>
+      (p.colors || []).forEach((color) => {
+        colorCounts[color] = (colorCounts[color] || 0) + 1;
+      }),
     );
-    return availableProducts;
+    return Object.entries(colorCounts).map(([key, count]) => ({ key, count }));
   },
 
-  filterByRating: (category: Product[]) => {
-    const fromHighRate = category.flatMap((item: any) => item.ratings);
-    fromHighRate.sort((low: any, high: any) => high - low);
+  filterByStock: (products: Product[]): Product[] => {
+    return [...products].sort((a, b) => b.stock - a.stock);
+  },
 
-    return fromHighRate;
+  filterByAvailability: (products: Product[]): Product[] => {
+    return products.filter((p) => p.isAvailable);
+  },
+
+  filterByRating: (products: Product[]): { key: number; count: number }[] => {
+    const ratings: Record<number, number> = {};
+    products.forEach((p) => {
+      const rate = p.ratings || 0;
+      ratings[rate] = (ratings[rate] || 0) + 1;
+    });
+    return Object.entries(ratings).map(([key, count]) => ({
+      key: Number(key),
+      count,
+    }));
   },
 };

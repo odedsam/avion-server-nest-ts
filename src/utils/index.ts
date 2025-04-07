@@ -1,5 +1,4 @@
-import { AllProducts } from '../api/Products/AllProducts.js';
-import { Product } from '../types/Product';
+import { AllProducts } from '../api/data';
 
 export const buildCategoryIndex = (allProducts: any[]) => {
   const categoryIndex = new Map<string, any[]>();
@@ -23,9 +22,6 @@ export const getProductByCategory = (cat: string) => {
 };
 
 export const getAllCategories = (offset, limit) => {
-  const allOptions = AllProducts.flatMap((item) => [...item]).slice(
-    offset,
-    limit,
-  );
+  const allOptions = AllProducts.flatMap((item) => [...item]).slice(offset, limit);
   return allOptions;
 };

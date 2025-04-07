@@ -1,44 +1,32 @@
-// export class CategoryDto {
-//   @IsString()
-//   @IsNotEmpty()
-//   @IsIn(['ceramics', 'chairs', 'lights', 'plants', 'tables'], {
-//     message:'Category must be one of the following: ceramics, chairs, lights, chairs, tables',
-//   })
-//   category?: string;
-//   static fromQuery(query: any): CategoryDto {
-//     const dto = new CategoryDto();
-//     dto.category = Object.keys(query)[0];
-//     return dto;
-//   }
-// }
+import { IsString, IsNumber, IsBoolean, IsArray, IsOptional } from 'class-validator';
 
-import { IsString, IsIn, IsOptional, Min, IsInt, Max } from 'class-validator';
-// next formation of all queries
-export class CategoryDto {
+export class CreateProductDto {
   @IsString()
-  @IsOptional()
-  @IsIn(['ceramics', 'chairs', 'lights', 'plants', 'tables'], {
-    message: 'Category must be one of the following: ceramics, chairs, lights, plants, tables',
-  })
-  category?: string;
+  name: string;
 
-  @IsInt()
-  @IsOptional()
-  @Min(0, { message: 'Offset must be 0 or greater' })
-  offset?: number;
+  @IsString()
+  brand: string;
 
-  @IsInt()
-  @IsOptional()
-  @Min(1, { message: 'Limit must be 1 or greater' })
-  @Max(100, { message: 'Limit must not exceed 100' })
-  limit?: number;
+  @IsNumber()
+  productPrice: number;
 
-  // שליפת הערכים מה-Query String
-  static fromQuery(query: any): CategoryDto {
-    const dto = new CategoryDto();
-    dto.category = Object.keys(query).find((key) => ['ceramics', 'chairs', 'lights', 'plants', 'tables'].includes(key));
-    if (query.offset) dto.offset = parseInt(query.offset, 10);
-    if (query.limit) dto.limit = parseInt(query.limit, 10);
-    return dto;
-  }
+  @IsNumber()
+  stock: number;
+
+  @IsNumber()
+  ratings: number;
+
+  @IsString()
+  material: string;
+
+  @IsArray()
+  @IsString({ each: true })
+  colors: string[];
+
+  @IsArray()
+  @IsString({ each: true })
+  tags: string[];
+
+  @IsBoolean()
+  isAvailable: boolean;
 }
