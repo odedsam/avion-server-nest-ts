@@ -58,7 +58,6 @@ export class ProductsService {
       filtered = sortFunctions[sortMap[sort]](filtered);
     }
 
-    // ✅ Image URL injection
     const supabaseUrlBuilder = getSupabaseImageUrl(this.config);
 
     const productsWithImageUrls = filtered.map((product) => ({
