@@ -2,9 +2,9 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AllProducts, categories } from 'src/api/data';
 import { ProductsQueryDto } from './dto/products-query.dto';
-import { Product } from 'src/types/product';
 import { sortFunctions } from 'src/utils/sort';
 import { getSupabaseImageUrl } from 'src/utils/getSupabaseImageUrl';
+import type {Product} from '../types/Product'
 
 @Injectable()
 export class ProductsService {

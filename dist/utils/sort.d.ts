@@ -1,4 +1,4 @@
-import { Product } from '../types/Product';
+import type { Product } from '../types/Product';
 export declare const sortFunctions: {
     sortByHighPrice: (category: Product[]) => Product[];
     sortByLowPrice: (category: Product[]) => Product[];

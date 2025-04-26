@@ -1,4 +1,4 @@
-import { Product } from '../types/Product';
+import type { Product } from '../types/Product';
 export const sortFunctions = {
   sortByHighPrice: (category: Product[]) => {
     return category.toSorted((a: any, b: any) => b.productPrice - a.productPrice);
