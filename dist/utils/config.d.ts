@@ -14,6 +14,6 @@ export declare namespace ConfigUtil {
         static mongooseModule: import("@nestjs/common").DynamicModule;
     }
     class AppModule {
-        static imports: (import("@nestjs/common").DynamicModule | Promise<import("@nestjs/common").DynamicModule> | typeof ProductsModule)[];
+        static imports: (typeof ProductsModule | import("@nestjs/common").DynamicModule | Promise<import("@nestjs/common").DynamicModule>)[];
     }
 }

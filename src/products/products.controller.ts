@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, HttpCode, HttpStatus, Post, Query } from '@nestjs/common';
 import { ProductsService } from './products.service';
 import { ProductsQueryDto } from './dto/products-query.dto';
 import { ProductDocs } from 'src/docs/product.docs';
@@ -14,4 +14,7 @@ export class ProductsController {
   getProducts(@Query() query: ProductsQueryDto) {
     return this.productService.getFilteredProducts(query);
   }
+
+
+
 }

@@ -94,7 +94,7 @@ let ProductsService = class ProductsService {
             filtered = sort_1.sortFunctions[sort_1.sortMap[sort]](filtered);
         }
         return {
-            products: filtered,
+            products: filtered.slice(0, 30),
             filtersMeta,
         };
     }

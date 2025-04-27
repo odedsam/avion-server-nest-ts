@@ -12,4 +12,6 @@ export declare class ProductsRepository {
     aggregateProducts(pipeline: any[]): Promise<any[]>;
     updateMany(filter: any, update: any): Promise<any>;
     private buildFindAllQuery;
+    findMany(filter: any, skip: number, limit: number, sort?: any): Promise<ProductDocument[]>;
+    count(filter: any): Promise<number>;
 }

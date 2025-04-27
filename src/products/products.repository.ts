@@ -54,4 +54,21 @@ export class ProductsRepository {
 
     return mongoQuery;
   }
+
+
+
+  async findMany(
+    filter: any,
+    skip: number,
+    limit: number,
+    sort: any = {},
+  ): Promise<ProductDocument[]> {
+    return this.productModel.find(filter).skip(skip).limit(limit).sort(sort).exec();
+  }
+
+  async count(filter: any): Promise<number> {
+    return this.productModel.countDocuments(filter).exec();
+  }
+
+
 }

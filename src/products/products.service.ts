@@ -96,7 +96,7 @@ export class ProductsService {
 
 
     return {
-      products: filtered,
+      products: filtered.slice(0,30),
       filtersMeta,
     };
   }

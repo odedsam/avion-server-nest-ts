@@ -58,6 +58,12 @@ let ProductsRepository = class ProductsRepository {
         }
         return mongoQuery;
     }
+    async findMany(filter, skip, limit, sort = {}) {
+        return this.productModel.find(filter).skip(skip).limit(limit).sort(sort).exec();
+    }
+    async count(filter) {
+        return this.productModel.countDocuments(filter).exec();
+    }
 };
 exports.ProductsRepository = ProductsRepository;
 exports.ProductsRepository = ProductsRepository = __decorate([
