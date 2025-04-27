@@ -21,7 +21,7 @@ exports.ProductsModule = ProductsModule = __decorate([
         imports: [mongoose_1.MongooseModule.forFeature([{ name: product_schema_1.Product.name, schema: product_schema_1.ProductSchema }])],
         controllers: [products_controller_1.ProductsController],
         providers: [products_service_1.ProductsService, products_repository_1.ProductsRepository],
-        exports: [products_service_1.ProductsService],
+        exports: [mongoose_1.MongooseModule.forFeature([{ name: product_schema_1.Product.name, schema: product_schema_1.ProductSchema }])],
     })
 ], ProductsModule);
 //# sourceMappingURL=products.module.js.map

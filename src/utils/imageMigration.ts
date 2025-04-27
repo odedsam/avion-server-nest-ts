@@ -1,6 +1,6 @@
 import { ConfigService } from '@nestjs/config';
 
-export const getSupabaseImageUrl = (config: ConfigService) => {
+export const imageUrlBuilder = (config: ConfigService) => {
   return (path: string): string => {
     const baseUrl = config.get<string>('SUPABASE_PROJECT_URL');
     const bucket = config.get<string>('BUCKET');
@@ -12,3 +12,14 @@ export const getSupabaseImageUrl = (config: ConfigService) => {
     return `${baseUrl}/storage/v1/object/public/${bucket}/${path}`;
   };
 };
+
+
+export function extractImagePath(supabaseUrl: string): string | null {
+  const match = supabaseUrl.match(/public\/(.+)/);
+  if (match && match[1]) {
+    return `/${match[1]}`;
+  }
+  return null;
+}
+// https://res.cloudinary.com/drs8tf2ml/image/upload/Chairs/chairEight_gyn3of.webp
+

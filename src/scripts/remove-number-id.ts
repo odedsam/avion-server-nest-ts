@@ -2,9 +2,8 @@ import { NestFactory } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { ConfigService } from '@nestjs/config';
-import { ProductsRepository } from '../../src/products/products.repository'; // Go up two levels to the project root, then into src
-import { AppModule } from '../../src/app.module'; // Go up two levels to the project root, then into src
-import { getSupabaseImageUrl } from '../../src/utils/getSupabaseImageUrl'; // Go up two levels to the project root, then into src
+import { ProductsRepository } from '../../src/products/products.repository';
+import { AppModule } from '../../src/app.module';
 
 async function removeNumberIdScript() {
   const app = await NestFactory.createApplicationContext(AppModule);

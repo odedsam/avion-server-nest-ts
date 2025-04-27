@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { ProductsRepository } from './products.repository';
 import { ProductsQueryDto } from './dto/products-query.dto';
-import { getSupabaseImageUrl } from 'src/utils/getSupabaseImageUrl';
+
 import { sortFunctions, sortMap } from 'src/utils/sort';
 
 @Injectable()
@@ -94,13 +94,9 @@ export class ProductsService {
       filtered = sortFunctions[sortMap[sort]](filtered);
     }
 
-    const supabaseUrlBuilder = getSupabaseImageUrl(this.config);
-
-    const productsWithImageUrls = filtered.map((product) => ({
-      ...product,  productImage: supabaseUrlBuilder(product.productImage),}));
 
     return {
-      products: productsWithImageUrls.slice(0, 30),
+      products: filtered,
       filtersMeta,
     };
   }

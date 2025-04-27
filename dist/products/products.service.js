@@ -13,7 +13,6 @@ exports.ProductsService = void 0;
 const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
 const products_repository_1 = require("./products.repository");
-const getSupabaseImageUrl_1 = require("../utils/getSupabaseImageUrl");
 const sort_1 = require("../utils/sort");
 let ProductsService = class ProductsService {
     config;
@@ -94,12 +93,8 @@ let ProductsService = class ProductsService {
         if (sort && sort_1.sortMap[sort]) {
             filtered = sort_1.sortFunctions[sort_1.sortMap[sort]](filtered);
         }
-        const supabaseUrlBuilder = (0, getSupabaseImageUrl_1.getSupabaseImageUrl)(this.config);
-        const productsWithImageUrls = filtered.map((product) => ({
-            ...product, productImage: supabaseUrlBuilder(product.productImage),
-        }));
         return {
-            products: productsWithImageUrls.slice(0, 30),
+            products: filtered,
             filtersMeta,
         };
     }

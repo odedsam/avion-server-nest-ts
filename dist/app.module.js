@@ -22,7 +22,7 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: config_1.ConfigUtil.AppModule.imports,
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService,],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map

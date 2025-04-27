@@ -1,5 +1,12 @@
-import { ProductsService } from '../products/products.service';
+import { AdminRepository } from './admin.repository';
 export declare class AdminService {
-    private readonly productsService;
-    constructor(productsService: ProductsService);
+    private readonly adminRepository;
+    private readonly logger;
+    constructor(adminRepository: AdminRepository);
+    migrateProductImageUrls(): Promise<{
+        modifiedCount: number;
+    }>;
+    removeProductField(fieldName: string): Promise<{
+        modifiedCount: number;
+    }>;
 }

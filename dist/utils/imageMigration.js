@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSupabaseImageUrl = void 0;
-const getSupabaseImageUrl = (config) => {
+exports.imageUrlBuilder = void 0;
+exports.extractImagePath = extractImagePath;
+const imageUrlBuilder = (config) => {
     return (path) => {
         const baseUrl = config.get('SUPABASE_PROJECT_URL');
         const bucket = config.get('BUCKET');
@@ -11,5 +12,12 @@ const getSupabaseImageUrl = (config) => {
         return `${baseUrl}/storage/v1/object/public/${bucket}/${path}`;
     };
 };
-exports.getSupabaseImageUrl = getSupabaseImageUrl;
-//# sourceMappingURL=getSupabaseImageUrl.js.map
+exports.imageUrlBuilder = imageUrlBuilder;
+function extractImagePath(supabaseUrl) {
+    const match = supabaseUrl.match(/public\/(.+)/);
+    if (match && match[1]) {
+        return `/${match[1]}`;
+    }
+    return null;
+}
+//# sourceMappingURL=imageMigration.js.map
