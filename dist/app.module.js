@@ -10,10 +10,8 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const config_1 = require("@nestjs/config");
-const products_module_1 = require("./products/products.module");
 const logger_middelware_1 = require("./common/middelware/logger.middelware");
-const GlobalConfigModule = config_1.ConfigModule.forRoot({ isGlobal: true });
+const config_1 = require("./utils/config");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer.apply(logger_middelware_1.LoggerMiddleware).forRoutes('*');
@@ -22,7 +20,7 @@ let AppModule = class AppModule {
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [GlobalConfigModule, products_module_1.ProductsModule],
+        imports: config_1.ConfigUtil.AppModule.imports,
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

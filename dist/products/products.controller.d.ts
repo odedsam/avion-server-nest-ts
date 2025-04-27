@@ -3,7 +3,7 @@ import { ProductsQueryDto } from './dto/products-query.dto';
 export declare class ProductsController {
     private readonly productService;
     constructor(productService: ProductsService);
-    getProducts(query: ProductsQueryDto): {
+    getProducts(query: ProductsQueryDto): Promise<{
         products: {
             productImage: string;
             id: number;
@@ -15,7 +15,6 @@ export declare class ProductsController {
             brand?: string;
             stock?: number;
             isAvailable?: boolean;
-            createdAt?: Date;
             ratings?: number;
             tags?: string[];
             colors?: string[];
@@ -58,5 +57,5 @@ export declare class ProductsController {
                 count: number;
             }[];
         };
-    };
+    }>;
 }

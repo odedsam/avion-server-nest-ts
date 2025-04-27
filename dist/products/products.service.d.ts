@@ -1,11 +1,12 @@
 import { ConfigService } from '@nestjs/config';
+import { ProductsRepository } from './products.repository';
 import { ProductsQueryDto } from './dto/products-query.dto';
 export declare class ProductsService {
     private readonly config;
-    private readonly products;
-    private readonly categories;
-    constructor(config: ConfigService);
-    getFilteredProducts(query: ProductsQueryDto): {
+    private readonly productsRepository;
+    constructor(config: ConfigService, productsRepository: ProductsRepository);
+    removeNumberIdFromAllProducts(): Promise<number>;
+    getFilteredProducts(query: ProductsQueryDto): Promise<{
         products: {
             productImage: string;
             id: number;
@@ -17,7 +18,6 @@ export declare class ProductsService {
             brand?: string;
             stock?: number;
             isAvailable?: boolean;
-            createdAt?: Date;
             ratings?: number;
             tags?: string[];
             colors?: string[];
@@ -60,7 +60,7 @@ export declare class ProductsService {
                 count: number;
             }[];
         };
-    };
+    }>;
     private countPriceRanges;
     private countByField;
 }

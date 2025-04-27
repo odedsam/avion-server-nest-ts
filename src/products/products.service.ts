@@ -1,29 +1,40 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { AllProducts, categories } from 'src/api/data';
+import { ProductsRepository } from './products.repository';
 import { ProductsQueryDto } from './dto/products-query.dto';
-import { sortFunctions } from 'src/utils/sort';
+import { Product } from './schemas/product.schema';
 import { getSupabaseImageUrl } from 'src/utils/getSupabaseImageUrl';
-import type {Product} from '../types/Product'
+import { sortFunctions } from 'src/utils/sort';
 
 @Injectable()
 export class ProductsService {
-  private readonly products: Product[][] = AllProducts;
-  private readonly categories = categories;
+  constructor(
+    private readonly config: ConfigService,
+    private readonly productsRepository: ProductsRepository,
+  ) {}
 
-  constructor(private readonly config: ConfigService) {}
+  async removeNumberIdFromAllProducts(): Promise<number> {
+    const result = await this.productsRepository.updateMany(
+      {},
+      { $unset: { id: 1 } }
+    );
+    return result.modifiedCount;
+  }
 
-  getFilteredProducts(query: ProductsQueryDto) {
+
+  async getFilteredProducts(query: ProductsQueryDto) {
     const { category, sort, priceRanges } = query;
 
-    let baseProducts = this.products.flat();
+    let baseProducts = await this.productsRepository.findAll(query);
 
     if (category) {
       const lower = category.toLowerCase();
-      if (!this.categories[lower]) {
+      const categoryProducts = baseProducts.filter((p) => p.category?.toLowerCase() === lower);
+
+      if (!categoryProducts.length) {
         throw new NotFoundException(`Category ${lower} not found`);
       }
-      baseProducts = this.categories[lower];
+      baseProducts = categoryProducts;
     }
 
     const filtersMeta = {
@@ -98,4 +109,6 @@ export class ProductsService {
 
     return Object.entries(counts).map(([key, count]) => ({ key, count }));
   }
+
+
 }

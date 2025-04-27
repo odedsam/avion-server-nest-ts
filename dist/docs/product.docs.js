@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getProductQueryStatus = exports.getProductsResponseStatus = exports.getProductOperationStatus = void 0;
+exports.ProductDocs = exports.getProductQueryStatus = exports.getProductsResponseStatus = exports.getProductOperationStatus = void 0;
 exports.getProductOperationStatus = {
     summary: 'Get filtered products',
     description: 'Returns products with applied filters, sorting, and filters metadata.',
@@ -69,4 +69,10 @@ exports.getProductQueryStatus = [
         description: 'Array of price ranges (e.g., ["0-99", "100-199"])',
     },
 ];
+exports.ProductDocs = {
+    operation: exports.getProductOperationStatus,
+    response: exports.getProductsResponseStatus,
+    queries: exports.getProductQueryStatus,
+    tag: 'proudcts'
+};
 //# sourceMappingURL=product.docs.js.map

@@ -22,5 +22,5 @@ export class ProductsQueryDto {
   @Transform(({ value }) => (Array.isArray(value) ? value : [value]))
   @IsArray()
   @IsString({ each: true })
-  priceRanges?: string[]; // e.g. ['0-99', '100-199']
+  priceRanges?: string[];
 }

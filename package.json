@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "avion-back",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Oded",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -17,7 +17,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "remove:number-id":"ts-node src/scripts/remove-number-id.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

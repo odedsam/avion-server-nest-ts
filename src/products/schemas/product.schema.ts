@@ -3,53 +3,76 @@ import { Document } from 'mongoose';
 
 export type ProductDocument = Product & Document;
 
-@Schema()
-class Dimensions {
-  @Prop() width: number;
-  @Prop() height: number;
-  @Prop() depth: number;
-}
-
-@Schema()
-class Shipping {
-  @Prop() weight: number;
-  @Prop({ type: Dimensions }) dimensions: Dimensions;
-}
-
-@Schema()
-class ProductDescription {
-  @Prop() main: string;
-  @Prop() descOne: string;
-  @Prop() descTwo: string;
-  @Prop() descThree: string;
-}
-
-@Schema()
-class ProductDimensions {
-  @Prop() height: string;
-  @Prop() weight: string;
-  @Prop() depth: string;
-}
-
-@Schema()
+@Schema({ timestamps: true })
 export class Product {
-  @Prop({ required: true }) id: number;
-  @Prop({ required: true }) name: string;
-  @Prop() slug: string;
-  @Prop() brand: string;
-  @Prop() productImage: string;
-  @Prop() productTitle: string;
-  @Prop() productPrice: number;
-  @Prop() category: string;
-  @Prop() material: string;
-  @Prop() isAvailable: boolean;
-  @Prop() stock: number;
-  @Prop() ratings: number;
-  @Prop([String]) tags: string[];
-  @Prop([String]) colors: string[];
-  @Prop({ type: Shipping }) shipping: Shipping;
-  @Prop({ type: ProductDescription }) productDescription: ProductDescription;
-  @Prop({ type: ProductDimensions }) productDimensions: ProductDimensions;
+  @Prop({ required: true, unique: true })
+  id: number;
+
+  @Prop()
+  name?: string;
+
+  @Prop()
+  slug?: string;
+
+  @Prop()
+  productImage?: string;
+
+  @Prop()
+  productTitle?: string;
+
+  @Prop()
+  productPrice?: number;
+
+  @Prop()
+  category?: string;
+
+  @Prop()
+  brand?: string;
+
+  @Prop()
+  stock?: number;
+
+  @Prop()
+  isAvailable?: boolean;
+
+  // createdAt will be automatically managed by Mongoose due to timestamps: true
+
+  @Prop()
+  ratings?: number;
+
+  @Prop({ type: [String], default: [] })
+  tags?: string[];
+
+  @Prop({ type: [String], default: [] })
+  colors?: string[];
+
+  @Prop()
+  material?: string;
+
+  @Prop({ type: Object })
+  shipping?: {
+    weight?: number;
+    dimensions?: {
+      width?: number;
+      height?: number;
+      depth?: number;
+    };
+  };
+
+  @Prop({ type: Object })
+  productDescription?: {
+    main?: string;
+    descOne?: string;
+    descTwo?: string;
+    descThree?: string;
+  };
+
+  @Prop({ type: Object })
+  productDimensions?: {
+    height?: string;
+    weight?: string;
+    depth?: string;
+  };
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product);

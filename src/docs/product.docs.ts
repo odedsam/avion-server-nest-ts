@@ -70,3 +70,10 @@ export const getProductQueryStatus: ApiQueryOptions[] = [
     description: 'Array of price ranges (e.g., ["0-99", "100-199"])',
   },
 ];
+
+export const ProductDocs = {
+  operation:getProductOperationStatus,
+  response:getProductsResponseStatus,
+  queries:getProductQueryStatus,
+  tag:'proudcts'
+}

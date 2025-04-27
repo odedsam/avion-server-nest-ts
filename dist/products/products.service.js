@@ -12,25 +12,30 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductsService = void 0;
 const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
-const data_1 = require("../api/data");
-const sort_1 = require("../utils/sort");
+const products_repository_1 = require("./products.repository");
 const getSupabaseImageUrl_1 = require("../utils/getSupabaseImageUrl");
+const sort_1 = require("../utils/sort");
 let ProductsService = class ProductsService {
     config;
-    products = data_1.AllProducts;
-    categories = data_1.categories;
-    constructor(config) {
+    productsRepository;
+    constructor(config, productsRepository) {
         this.config = config;
+        this.productsRepository = productsRepository;
     }
-    getFilteredProducts(query) {
+    async removeNumberIdFromAllProducts() {
+        const result = await this.productsRepository.updateMany({}, { $unset: { id: 1 } });
+        return result.modifiedCount;
+    }
+    async getFilteredProducts(query) {
         const { category, sort, priceRanges } = query;
-        let baseProducts = this.products.flat();
+        let baseProducts = await this.productsRepository.findAll(query);
         if (category) {
             const lower = category.toLowerCase();
-            if (!this.categories[lower]) {
+            const categoryProducts = baseProducts.filter((p) => p.category?.toLowerCase() === lower);
+            if (!categoryProducts.length) {
                 throw new common_1.NotFoundException(`Category ${lower} not found`);
             }
-            baseProducts = this.categories[lower];
+            baseProducts = categoryProducts;
         }
         const filtersMeta = {
             priceRanges: this.countPriceRanges(baseProducts),
@@ -94,6 +99,7 @@ let ProductsService = class ProductsService {
 exports.ProductsService = ProductsService;
 exports.ProductsService = ProductsService = __decorate([
     (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [config_1.ConfigService])
+    __metadata("design:paramtypes", [config_1.ConfigService,
+        products_repository_1.ProductsRepository])
 ], ProductsService);
 //# sourceMappingURL=products.service.js.map

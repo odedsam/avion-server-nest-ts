@@ -14,10 +14,10 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductsController = void 0;
 const common_1 = require("@nestjs/common");
-const swagger_1 = require("@nestjs/swagger");
 const products_service_1 = require("./products.service");
 const products_query_dto_1 = require("./dto/products-query.dto");
 const product_docs_1 = require("../docs/product.docs");
+const swaggerDecorators_1 = require("../utils/swaggerDecorators");
 let ProductsController = class ProductsController {
     productService;
     constructor(productService) {
@@ -30,19 +30,13 @@ let ProductsController = class ProductsController {
 exports.ProductsController = ProductsController;
 __decorate([
     (0, common_1.Get)(),
-    (0, swagger_1.ApiOperation)(product_docs_1.getProductOperationStatus),
-    (0, swagger_1.ApiResponse)(product_docs_1.getProductsResponseStatus),
-    (0, swagger_1.ApiQuery)(product_docs_1.getProductQueryStatus[0]),
-    (0, swagger_1.ApiQuery)(product_docs_1.getProductQueryStatus[1]),
-    (0, swagger_1.ApiQuery)(product_docs_1.getProductQueryStatus[2]),
-    (0, common_1.UsePipes)(new common_1.ValidationPipe({ transform: true })),
+    (0, swaggerDecorators_1.Docs)(product_docs_1.ProductDocs),
     __param(0, (0, common_1.Query)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [products_query_dto_1.ProductsQueryDto]),
     __metadata("design:returntype", void 0)
 ], ProductsController.prototype, "getProducts", null);
 exports.ProductsController = ProductsController = __decorate([
-    (0, swagger_1.ApiTags)('products'),
     (0, common_1.Controller)('products'),
     __metadata("design:paramtypes", [products_service_1.ProductsService])
 ], ProductsController);
