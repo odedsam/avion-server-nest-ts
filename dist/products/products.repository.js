@@ -23,6 +23,28 @@ let ProductsRepository = class ProductsRepository {
         this.productModel = productModel;
     }
     async findAll(query) {
+        const mongoQuery = this.buildFindAllQuery(query);
+        return this.productModel.find(mongoQuery).lean().exec();
+    }
+    async findById(id) {
+        return this.productModel.findOne({ id }).lean().exec();
+    }
+    async findByCategory(category) {
+        return this.productModel.find({ category }).lean().exec();
+    }
+    async findByPriceRange(min, max) {
+        return this.productModel.find({ productPrice: { $gte: min, $lte: max } }).lean().exec();
+    }
+    async findByBrand(brand) {
+        return this.productModel.find({ brand }).lean().exec();
+    }
+    async aggregateProducts(pipeline) {
+        return this.productModel.aggregate(pipeline).exec();
+    }
+    async updateMany(filter, update) {
+        return this.productModel.updateMany(filter, update).exec();
+    }
+    buildFindAllQuery(query) {
         const { category, priceRanges } = query;
         const mongoQuery = {};
         if (category) {
@@ -34,17 +56,7 @@ let ProductsRepository = class ProductsRepository {
                 return { productPrice: { $gte: min, $lte: max } };
             });
         }
-        return this.productModel.find(mongoQuery).lean();
-    }
-    async findById(id) {
-        return this.productModel.findOne({ id }).lean();
-    }
-    async removeNumberIdFromAllProducts() {
-        const result = await this.productModel.updateMany({}, { $unset: { id: 1 } });
-        return result.modifiedCount;
-    }
-    async updateMany(filter, update) {
-        return this.productModel.updateMany(filter, update).exec();
+        return mongoQuery;
     }
 };
 exports.ProductsRepository = ProductsRepository;

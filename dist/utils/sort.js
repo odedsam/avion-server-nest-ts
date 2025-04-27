@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sortFunctions = void 0;
+exports.sortMap = exports.sortFunctions = void 0;
 exports.sortFunctions = {
     sortByHighPrice: (category) => {
         return category.toSorted((a, b) => b.productPrice - a.productPrice);
@@ -23,5 +23,14 @@ exports.sortFunctions = {
     sortByDepth: (category) => {
         return category.toSorted((a, b) => b.shipping.dimensions.depth - a.shipping.dimensions.depth);
     },
+};
+exports.sortMap = {
+    'price-desc': 'sortByHighPrice',
+    'price-asc': 'sortByLowPrice',
+    name: 'sortByName',
+    availability: 'sortByAvailability',
+    rating: 'sortByRating',
+    height: 'sortByHeight',
+    depth: 'sortByDepth',
 };
 //# sourceMappingURL=sort.js.map

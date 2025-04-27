@@ -1,10 +1,9 @@
-import { AdminService } from './admin.service';
+import { ProductsService } from '../products/products.service';
 export declare class AdminController {
-    private readonly adminService;
+    private readonly productsService;
     private readonly logger;
-    constructor(adminService: AdminService);
-    removeNumberId(): Promise<{
+    constructor(productsService: ProductsService);
+    hello(): Promise<{
         message: string;
-        count?: number;
     }>;
 }

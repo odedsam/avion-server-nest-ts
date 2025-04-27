@@ -3,9 +3,8 @@ import { ProductsRepository } from './products.repository';
 import { ProductsQueryDto } from './dto/products-query.dto';
 export declare class ProductsService {
     private readonly config;
-    private readonly productsRepository;
-    constructor(config: ConfigService, productsRepository: ProductsRepository);
-    removeNumberIdFromAllProducts(): Promise<number>;
+    private readonly productRepo;
+    constructor(config: ConfigService, productRepo: ProductsRepository);
     getFilteredProducts(query: ProductsQueryDto): Promise<{
         products: {
             productImage: string;
@@ -43,24 +42,10 @@ export declare class ProductsService {
             };
         }[];
         filtersMeta: {
-            priceRanges: {
-                range: string;
-                count: number;
-            }[];
-            colors: {
-                key: string;
-                count: number;
-            }[];
-            brands: {
-                key: string;
-                count: number;
-            }[];
-            materials: {
-                key: string;
-                count: number;
-            }[];
+            priceRanges: any[];
+            colors: any[];
+            brands: any[];
+            materials: any[];
         };
     }>;
-    private countPriceRanges;
-    private countByField;
 }

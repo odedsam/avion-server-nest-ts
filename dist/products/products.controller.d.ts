@@ -40,22 +40,10 @@ export declare class ProductsController {
             };
         }[];
         filtersMeta: {
-            priceRanges: {
-                range: string;
-                count: number;
-            }[];
-            colors: {
-                key: string;
-                count: number;
-            }[];
-            brands: {
-                key: string;
-                count: number;
-            }[];
-            materials: {
-                key: string;
-                count: number;
-            }[];
+            priceRanges: any[];
+            colors: any[];
+            brands: any[];
+            materials: any[];
         };
     }>;
 }

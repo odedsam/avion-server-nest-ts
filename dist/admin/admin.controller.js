@@ -12,18 +12,17 @@ var AdminController_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AdminController = void 0;
 const common_1 = require("@nestjs/common");
-const admin_service_1 = require("./admin.service");
+const products_service_1 = require("../products/products.service");
 let AdminController = AdminController_1 = class AdminController {
-    adminService;
+    productsService;
     logger = new common_1.Logger(AdminController_1.name);
-    constructor(adminService) {
-        this.adminService = adminService;
+    constructor(productsService) {
+        this.productsService = productsService;
     }
-    async removeNumberId() {
+    async hello() {
         this.logger.log('Received request to remove the "id" number field from products.');
         try {
-            const count = await this.adminService.removeNumberIdFromAllProductsAdmin();
-            return { message: 'Successfully initiated the removal of the "id" number field.', count };
+            return { message: 'Successfully initiated the removal of the "id" number field.', };
         }
         catch (error) {
             this.logger.error('Error during the removal process:', error);
@@ -33,14 +32,14 @@ let AdminController = AdminController_1 = class AdminController {
 };
 exports.AdminController = AdminController;
 __decorate([
-    (0, common_1.Post)('remove-number-id'),
+    (0, common_1.Post)('helo'),
     (0, common_1.HttpCode)(common_1.HttpStatus.OK),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], AdminController.prototype, "removeNumberId", null);
+], AdminController.prototype, "hello", null);
 exports.AdminController = AdminController = AdminController_1 = __decorate([
     (0, common_1.Controller)('admin'),
-    __metadata("design:paramtypes", [admin_service_1.AdminService])
+    __metadata("design:paramtypes", [products_service_1.ProductsService])
 ], AdminController);
 //# sourceMappingURL=admin.controller.js.map

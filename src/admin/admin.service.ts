@@ -5,9 +5,4 @@ import { ProductsService } from '../products/products.service';
 export class AdminService {
   constructor(private readonly productsService: ProductsService) {}
 
-  async removeNumberIdFromAllProductsAdmin(): Promise<number> {
-    return this.productsService.removeNumberIdFromAllProducts();
-  }
-
-
 }

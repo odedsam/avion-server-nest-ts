@@ -22,3 +22,13 @@ export const sortFunctions = {
     return category.toSorted((a: any, b: any) => b.shipping.dimensions.depth - a.shipping.dimensions.depth);
   },
 };
+
+export const sortMap: Record<string, keyof typeof sortFunctions> = {
+      'price-desc': 'sortByHighPrice',
+      'price-asc': 'sortByLowPrice',
+      name: 'sortByName',
+      availability: 'sortByAvailability',
+      rating: 'sortByRating',
+      height: 'sortByHeight',
+      depth: 'sortByDepth',
+    };

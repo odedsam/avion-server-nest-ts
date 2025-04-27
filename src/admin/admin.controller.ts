@@ -1,19 +1,18 @@
 import { Controller, Post, HttpCode, HttpStatus, Logger } from '@nestjs/common';
-import { AdminService } from './admin.service'; // Import AdminService
+import { ProductsService } from '../products/products.service';
 
 @Controller('admin')
 export class AdminController {
   private readonly logger = new Logger(AdminController.name);
 
-  constructor(private readonly adminService: AdminService) {} // Inject AdminService
+  constructor(private readonly productsService: ProductsService) {}
 
-  @Post('remove-number-id')
+  @Post('helo')
   @HttpCode(HttpStatus.OK)
-  async removeNumberId(): Promise<{ message: string; count?: number }> {
+  async hello(): Promise<{ message: string;  }> {
     this.logger.log('Received request to remove the "id" number field from products.');
     try {
-      const count = await this.adminService.removeNumberIdFromAllProductsAdmin();
-      return { message: 'Successfully initiated the removal of the "id" number field.', count };
+      return { message: 'Successfully initiated the removal of the "id" number field.',  };
     } catch (error) {
       this.logger.error('Error during the removal process:', error);
       return { message: 'Failed to remove the "id" number field.' };

@@ -6,9 +6,38 @@ import { ProductsQueryDto } from './dto/products-query.dto';
 
 @Injectable()
 export class ProductsRepository {
-  constructor(@InjectModel(Product.name) private readonly productModel: Model<ProductDocument>,) {}
+  constructor(@InjectModel(Product.name) private readonly productModel: Model<ProductDocument>) {}
 
   async findAll(query?: ProductsQueryDto): Promise<Product[]> {
+    const mongoQuery = this.buildFindAllQuery(query);
+    return this.productModel.find(mongoQuery).lean<Product[]>().exec();
+  }
+
+  async findById(id: number): Promise<Product | null> {
+    return this.productModel.findOne({ id }).lean<Product | null>().exec();
+  }
+
+  async findByCategory(category: string): Promise<Product[]> {
+    return this.productModel.find({ category }).lean<Product[]>().exec();
+  }
+
+  async findByPriceRange(min: number, max: number): Promise<Product[]> {
+    return this.productModel.find({ productPrice: { $gte: min, $lte: max } }).lean<Product[]>().exec();
+  }
+
+  async findByBrand(brand: string): Promise<Product[]> {
+    return this.productModel.find({ brand }).lean<Product[]>().exec();
+  }
+
+  async aggregateProducts(pipeline: any[]): Promise<any[]> {
+    return this.productModel.aggregate(pipeline).exec();
+  }
+
+  async updateMany(filter: any, update: any): Promise<any> {
+    return this.productModel.updateMany(filter, update).exec();
+  }
+
+  private buildFindAllQuery(query?: ProductsQueryDto): any {
     const { category, priceRanges } = query;
     const mongoQuery: any = {};
 
@@ -23,29 +52,6 @@ export class ProductsRepository {
       });
     }
 
-    return this.productModel.find(mongoQuery).lean<Product[]>();
+    return mongoQuery;
   }
-
-  async findById(id: number): Promise<Product | null> {
-    return this.productModel.findOne({ id }).lean<Product | null>();
-  }
-
-
-async removeNumberIdFromAllProducts(): Promise<number> {
-  const result = await this.productModel.updateMany(
-    {},
-    { $unset: { id: 1 } }
-  );
-  return result.modifiedCount;
 }
-
-
-async updateMany(filter: any, update: any): Promise<any> {
-  return this.productModel.updateMany(filter, update).exec();
-}
-
-
-
-}
-
-

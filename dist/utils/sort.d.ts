@@ -8,3 +8,4 @@ export declare const sortFunctions: {
     sortByHeight: (category: Product[]) => Product[];
     sortByDepth: (category: Product[]) => Product[];
 };
+export declare const sortMap: Record<string, keyof typeof sortFunctions>;

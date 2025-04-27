@@ -9,56 +9,93 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateProductDto = void 0;
+exports.ProductsQueryDto = exports.FilterOptionDto = exports.SortOptionDto = exports.SortOrder = void 0;
 const class_validator_1 = require("class-validator");
-class CreateProductDto {
-    name;
-    brand;
-    productPrice;
-    stock;
-    ratings;
-    material;
-    colors;
-    tags;
-    isAvailable;
+const class_transformer_1 = require("class-transformer");
+var SortOrder;
+(function (SortOrder) {
+    SortOrder["ASC"] = "asc";
+    SortOrder["DESC"] = "desc";
+})(SortOrder || (exports.SortOrder = SortOrder = {}));
+class SortOptionDto {
+    sortBy;
+    sortOrder;
 }
-exports.CreateProductDto = CreateProductDto;
+exports.SortOptionDto = SortOptionDto;
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], CreateProductDto.prototype, "name", void 0);
+], SortOptionDto.prototype, "sortBy", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsEnum)(SortOrder),
     __metadata("design:type", String)
-], CreateProductDto.prototype, "brand", void 0);
+], SortOptionDto.prototype, "sortOrder", void 0);
+class FilterOptionDto {
+    colors;
+    brands;
+    materials;
+    priceRanges;
+}
+exports.FilterOptionDto = FilterOptionDto;
 __decorate([
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreateProductDto.prototype, "productPrice", void 0);
-__decorate([
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreateProductDto.prototype, "stock", void 0);
-__decorate([
-    (0, class_validator_1.IsNumber)(),
-    __metadata("design:type", Number)
-], CreateProductDto.prototype, "ratings", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], CreateProductDto.prototype, "material", void 0);
-__decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
-], CreateProductDto.prototype, "colors", void 0);
+], FilterOptionDto.prototype, "colors", void 0);
 __decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
-], CreateProductDto.prototype, "tags", void 0);
+], FilterOptionDto.prototype, "brands", void 0);
 __decorate([
-    (0, class_validator_1.IsBoolean)(),
-    __metadata("design:type", Boolean)
-], CreateProductDto.prototype, "isAvailable", void 0);
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], FilterOptionDto.prototype, "materials", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], FilterOptionDto.prototype, "priceRanges", void 0);
+class ProductsQueryDto {
+    category;
+    sort;
+    filters;
+    page;
+    limit;
+}
+exports.ProductsQueryDto = ProductsQueryDto;
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], ProductsQueryDto.prototype, "category", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => SortOptionDto),
+    __metadata("design:type", SortOptionDto)
+], ProductsQueryDto.prototype, "sort", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.ValidateNested)(),
+    (0, class_transformer_1.Type)(() => FilterOptionDto),
+    __metadata("design:type", FilterOptionDto)
+], ProductsQueryDto.prototype, "filters", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], ProductsQueryDto.prototype, "page", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsNumber)(),
+    __metadata("design:type", Number)
+], ProductsQueryDto.prototype, "limit", void 0);
 //# sourceMappingURL=products.dto.js.map

@@ -1,32 +1,64 @@
-import { IsString, IsNumber, IsBoolean, IsArray, IsOptional } from 'class-validator';
+import { IsString, IsNumber, IsOptional, IsArray, ValidateNested, IsEnum } from 'class-validator';
+import { Type } from 'class-transformer';
 
-export class CreateProductDto {
+export enum SortOrder {
+  ASC = 'asc',
+  DESC = 'desc',
+}
+
+export class SortOptionDto {
+  @IsOptional()
   @IsString()
-  name: string;
+  sortBy?: string;
 
-  @IsString()
-  brand: string;
+  @IsOptional()
+  @IsEnum(SortOrder)
+  sortOrder?: SortOrder;
+}
 
-  @IsNumber()
-  productPrice: number;
-
-  @IsNumber()
-  stock: number;
-
-  @IsNumber()
-  ratings: number;
-
-  @IsString()
-  material: string;
-
+export class FilterOptionDto {
+  @IsOptional()
   @IsArray()
   @IsString({ each: true })
-  colors: string[];
+  colors?: string[];
 
+  @IsOptional()
   @IsArray()
   @IsString({ each: true })
-  tags: string[];
+  brands?: string[];
 
-  @IsBoolean()
-  isAvailable: boolean;
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  materials?: string[];
+
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  priceRanges?: string[];
+
+}
+
+export class ProductsQueryDto {
+  @IsOptional()
+  @IsString()
+  category?: string;
+
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => SortOptionDto)
+  sort?: SortOptionDto;
+
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => FilterOptionDto)
+  filters?: FilterOptionDto;
+
+  @IsOptional()
+  @IsNumber()
+  page?: number;
+
+  @IsOptional()
+  @IsNumber()
+  limit?: number;
 }

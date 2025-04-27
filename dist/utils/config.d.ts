@@ -1,7 +1,7 @@
 import { ConfigService } from '@nestjs/config';
+import { ProductsModule } from '../products/products.module';
 import { INestApplication } from '@nestjs/common';
 import { DocumentBuilder } from '@nestjs/swagger';
-import { AdminModule } from 'src/admin/admin.module';
 export declare namespace ConfigUtil {
     class Origin {
         static getOriginUrl(configService: ConfigService): string | undefined;
@@ -14,6 +14,6 @@ export declare namespace ConfigUtil {
         static mongooseModule: import("@nestjs/common").DynamicModule;
     }
     class AppModule {
-        static imports: (typeof AdminModule | import("@nestjs/common").DynamicModule | Promise<import("@nestjs/common").DynamicModule>)[];
+        static imports: (import("@nestjs/common").DynamicModule | Promise<import("@nestjs/common").DynamicModule> | typeof ProductsModule)[];
     }
 }

@@ -17,9 +17,6 @@ let AdminService = class AdminService {
     constructor(productsService) {
         this.productsService = productsService;
     }
-    async removeNumberIdFromAllProductsAdmin() {
-        return this.productsService.removeNumberIdFromAllProducts();
-    }
 };
 exports.AdminService = AdminService;
 exports.AdminService = AdminService = __decorate([
