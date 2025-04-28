@@ -17,6 +17,8 @@ export class ProductsQueryDto {
     'depth',
   ])
   sort?: string;
+  offset?:number;
+  limit?:number;
 
   @IsOptional()
   @Transform(({ value }) => (Array.isArray(value) ? value : [value]))

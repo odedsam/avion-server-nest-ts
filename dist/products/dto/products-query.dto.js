@@ -15,6 +15,8 @@ const class_transformer_1 = require("class-transformer");
 class ProductsQueryDto {
     category;
     sort;
+    offset;
+    limit;
     priceRanges;
 }
 exports.ProductsQueryDto = ProductsQueryDto;
