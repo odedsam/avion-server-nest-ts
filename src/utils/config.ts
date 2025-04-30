@@ -3,7 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ProductsModule } from '../products/products.module'; // Adjust the import path if needed
 import { INestApplication } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { AdminModule } from 'src/admin/admin.module';
+// import { AdminModule } from 'src/admin/admin.module';
 
 export namespace ConfigUtil {
   export class Origin {
@@ -41,7 +41,6 @@ export namespace ConfigUtil {
       }),
       Mongoose.mongooseModule,
       ProductsModule,
-      AdminModule
     ];
   }
 }

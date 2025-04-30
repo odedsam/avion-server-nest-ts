@@ -5,7 +5,6 @@ const config_1 = require("@nestjs/config");
 const mongoose_1 = require("@nestjs/mongoose");
 const products_module_1 = require("../products/products.module");
 const swagger_1 = require("@nestjs/swagger");
-const admin_module_1 = require("../admin/admin.module");
 var ConfigUtil;
 (function (ConfigUtil) {
     class Origin {
@@ -42,7 +41,6 @@ var ConfigUtil;
             }),
             Mongoose.mongooseModule,
             products_module_1.ProductsModule,
-            admin_module_1.AdminModule
         ];
     }
     ConfigUtil.AppModule = AppModule;
