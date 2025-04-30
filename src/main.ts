@@ -14,8 +14,10 @@ async function bootstrap() {
   const port = configService.get<number>('PORT', 5001);
 
   app.enableCors({
-    origin: origin,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: ['https://avion-steel.vercel.app', 'http://localhost:5173'],
+    methods: ['GET','POST','PUT','DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
+    optionsSuccessStatus: 204,
   });
 
   app.useGlobalPipes(new ValidationPipe());
