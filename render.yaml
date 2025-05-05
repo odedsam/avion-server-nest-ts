@@ -1,0 +1,22 @@
+{
+  "name": "nestjs-app",
+  "version": "1.0.0",
+  "description": "NestJS Application deployed with pnpm",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "pnpm run build",
+    "prebuild": "pnpm install",
+    "dev": "pnpm run start:dev"
+  },
+  "dependencies": {
+    "nestjs": "^8.0.0",
+    "pnpm": "^7.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "typescript": "^4.4.0"
+  }
+}
