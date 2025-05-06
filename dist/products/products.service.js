@@ -22,14 +22,24 @@ let ProductsService = class ProductsService {
         this.productRepo = productRepo;
     }
     async getFilteredProducts(query) {
-        const { category, sort } = query;
-        let initProducts = await this.productRepo.findAll(query);
-        if (category && !initProducts.length) {
-            throw new common_1.NotFoundException(`Category ${category} not found`);
-        }
-        const aggregationPipeline = [];
+        const { category, sort, limit, offset, colors, brands, materials, ...otherFilters } = query;
+        const findQuery = {};
         if (category) {
-            aggregationPipeline.push({ $match: { category: { $regex: new RegExp(`^${category}$`, 'i') } } });
+            findQuery.category = { $regex: new RegExp(`^${category}$`, 'i') };
+        }
+        if (colors?.length) {
+            findQuery.colors = { $in: colors };
+        }
+        if (brands?.length) {
+            findQuery.brand = { $in: brands };
+        }
+        if (materials?.length) {
+            findQuery.material = { $in: materials };
+        }
+        for (const key in otherFilters) {
+            if (otherFilters[key] !== undefined) {
+                findQuery[key] = otherFilters[key];
+            }
         }
         const priceRangesAggregation = [
             {
@@ -37,10 +47,8 @@ let ProductsService = class ProductsService {
                     groupBy: '$productPrice',
                     boundaries: [0, 100, 200, 300, 400],
                     default: '400+',
-                    output: {
-                        count: { $sum: 1 }
-                    }
-                }
+                    output: { count: { $sum: 1 } },
+                },
             },
             {
                 $project: {
@@ -53,14 +61,14 @@ let ProductsService = class ProductsService {
                                 $concat: [
                                     { $toString: '$_id' },
                                     '-',
-                                    { $toString: { $subtract: [{ $add: ['$_id', 100] }, 1] } }
-                                ]
-                            }
-                        }
+                                    { $toString: { $subtract: [{ $add: ['$_id', 100] }, 1] } },
+                                ],
+                            },
+                        },
                     },
-                    count: 1
-                }
-            }
+                    count: 1,
+                },
+            },
         ];
         const colorsAggregation = [
             {
@@ -92,33 +100,54 @@ let ProductsService = class ProductsService {
             { $group: { _id: '$tags', count: { $sum: 1 } } },
             { $project: { _id: 0, value: '$_id', count: 1 } },
         ];
-        const [priceRangesResult, colorsResult, brandsResult, materialsResult, tagsResult] = await Promise.all([
-            this.productRepo.aggregateProducts(aggregationPipeline.concat(priceRangesAggregation)),
-            this.productRepo.aggregateProducts(aggregationPipeline.concat(colorsAggregation)),
-            this.productRepo.aggregateProducts(aggregationPipeline.concat(brandsAggregation)),
-            this.productRepo.aggregateProducts(aggregationPipeline.concat(materialsAggregation)),
-            this.productRepo.aggregateProducts(aggregationPipeline.concat(tagsAggregation)),
+        if (!category) {
+            const [price, colors, brands, materials, tags] = await Promise.all([
+                this.productRepo.aggregateProducts(priceRangesAggregation),
+                this.productRepo.aggregateProducts(colorsAggregation),
+                this.productRepo.aggregateProducts(brandsAggregation),
+                this.productRepo.aggregateProducts(materialsAggregation),
+                this.productRepo.aggregateProducts(tagsAggregation),
+            ]);
+            return {
+                filtersMeta: { price, colors, brands, materials, tags },
+            };
+        }
+        const [products, totalCount] = await Promise.all([
+            this.productRepo.findAll(findQuery, limit, offset),
+            this.productRepo.countAll(findQuery),
         ]);
-        const filtersMeta = {
-            price: priceRangesResult,
-            colors: colorsResult,
-            brands: brandsResult,
-            materials: materialsResult,
-            tags: tagsResult
-        };
-        let filtered = [...initProducts];
+        if (products.length === 0 && totalCount === 0) {
+            throw new common_1.NotFoundException(`Category ${category} not found or has no matching products`);
+        }
+        const aggregationPipeline = [{ $match: findQuery }];
+        const [price, colorsMeta, brandsMeta, materialsMeta, tagsMeta] = await Promise.all([
+            this.productRepo.aggregateProducts([...aggregationPipeline, ...priceRangesAggregation]),
+            this.productRepo.aggregateProducts([...aggregationPipeline, ...colorsAggregation]),
+            this.productRepo.aggregateProducts([...aggregationPipeline, ...brandsAggregation]),
+            this.productRepo.aggregateProducts([...aggregationPipeline, ...materialsAggregation]),
+            this.productRepo.aggregateProducts([...aggregationPipeline, ...tagsAggregation]),
+        ]);
+        let sortedProducts = [...products];
         if (sort && sort_1.sortMap[sort]) {
-            filtered = sort_1.sortFunctions[sort_1.sortMap[sort]](filtered);
+            sortedProducts = sort_1.sortFunctions[sort_1.sortMap[sort]](sortedProducts);
         }
         return {
-            products: filtered.slice(0, 30),
-            filtersMeta,
+            products: sortedProducts,
+            filtersMeta: {
+                price,
+                colors: colorsMeta && colorsMeta.splice(0, 25),
+                brands: brandsMeta,
+                materials: materialsMeta,
+                tags: tagsMeta,
+            },
+            totalCount,
         };
     }
 };
 exports.ProductsService = ProductsService;
 exports.ProductsService = ProductsService = __decorate([
     (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [config_1.ConfigService, products_repository_1.ProductsRepository])
+    __metadata("design:paramtypes", [config_1.ConfigService,
+        products_repository_1.ProductsRepository])
 ], ProductsService);
 //# sourceMappingURL=products.service.js.map

@@ -11,4 +11,7 @@ export declare class ProductsQueryDto {
     offset?: number;
     limit?: number;
     priceRanges?: string[];
+    colors?: string[];
+    brands?: string[];
+    materials?: string[];
 }

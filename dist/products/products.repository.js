@@ -22,9 +22,22 @@ let ProductsRepository = class ProductsRepository {
     constructor(productModel) {
         this.productModel = productModel;
     }
-    async findAll(query) {
+    async findAll(query, limit, offset) {
         const mongoQuery = this.buildFindAllQuery(query);
-        return this.productModel.find(mongoQuery).lean().exec();
+        const find = this.productModel.find(mongoQuery).lean();
+        if (limit !== undefined) {
+            find.limit(limit);
+        }
+        if (offset !== undefined) {
+            find.skip(offset);
+        }
+        return find.exec();
+    }
+    async findOptionsByCategory(category) {
+        const brands = await this.productModel.distinct('brand', { category });
+        const colors = await this.productModel.distinct('colors', { category });
+        const materials = await this.productModel.distinct('material', { category });
+        return { brands, colors, materials };
     }
     async findById(id) {
         return this.productModel.findOne({ id }).lean().exec();
@@ -45,7 +58,7 @@ let ProductsRepository = class ProductsRepository {
         return this.productModel.updateMany(filter, update).exec();
     }
     buildFindAllQuery(query) {
-        const { category, priceRanges } = query;
+        const { category, priceRanges, colors, brands, materials } = query;
         const mongoQuery = {};
         if (category) {
             mongoQuery.category = category;
@@ -56,7 +69,19 @@ let ProductsRepository = class ProductsRepository {
                 return { productPrice: { $gte: min, $lte: max } };
             });
         }
+        if (colors?.length) {
+            mongoQuery.colors = { $in: colors };
+        }
+        if (brands?.length) {
+            mongoQuery.brand = { $in: brands };
+        }
+        if (materials?.length) {
+            mongoQuery.material = { $in: materials };
+        }
         return mongoQuery;
+    }
+    async countAll(filter = {}) {
+        return this.productModel.countDocuments(filter).exec();
     }
     async findMany(filter, skip, limit, sort = {}) {
         return this.productModel.find(filter).skip(skip).limit(limit).sort(sort).exec();

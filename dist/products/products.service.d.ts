@@ -6,7 +6,24 @@ export declare class ProductsService {
     private readonly productRepo;
     constructor(config: ConfigService, productRepo: ProductsRepository);
     getFilteredProducts(query: ProductsQueryDto): Promise<{
+        filtersMeta: {
+            price: any[];
+            colors: any[];
+            brands: any[];
+            materials: any[];
+            tags: any[];
+        };
+        products?: undefined;
+        totalCount?: undefined;
+    } | {
         products: import("./schemas/product.schema").Product[];
-        filtersMeta: Record<string, any[]>;
+        filtersMeta: {
+            price: any[];
+            colors: any[];
+            brands: any[];
+            materials: any[];
+            tags: any[];
+        };
+        totalCount: number;
     }>;
 }

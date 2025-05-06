@@ -8,10 +8,83 @@ import { ProductsQueryDto } from './dto/products-query.dto';
 export class ProductsRepository {
   constructor(@InjectModel(Product.name) private readonly productModel: Model<ProductDocument>) {}
 
-  async findAll(query?: ProductsQueryDto): Promise<Product[]> {
+  async findAll(
+    query?: ProductsQueryDto,
+    limit?: number,
+    offset?: number,
+  ): Promise<Product[]> {
     const mongoQuery = this.buildFindAllQuery(query);
-    return this.productModel.find(mongoQuery).lean<Product[]>().exec();
+    const find = this.productModel.find(mongoQuery).lean<Product[]>();
+
+    if (limit !== undefined) {
+      find.limit(limit);
+    }
+    if (offset !== undefined) {
+      find.skip(offset);
+    }
+
+    return find.exec();
   }
+
+  async findOptionsByCategory(category: string): Promise<{
+    brands: string[];
+    colors: string[];
+    materials: string[];
+  }> {
+    const brands = await this.productModel.distinct('brand', { category });
+    const colors = await this.productModel.distinct('colors', { category });
+    const materials = await this.productModel.distinct('material', { category });
+
+    return { brands, colors, materials };
+  }
+
+
+  // async findOptionsByCategory(category: string): Promise<{
+  //   brands: string[];
+  //   colors: string[];
+  //   materials: string[];
+  //   tags: string[];
+  //   minPrice: number;
+  //   maxPrice: number;
+  // }> {
+  //   const [brands, colors, materials, tags] = await Promise.all([
+  //     this.productModel.distinct('brand', { category }),
+  //     this.productModel.distinct('colors', { category }),
+  //     this.productModel.distinct('material', { category }),
+  //     this.productModel.distinct('tags', { category }),
+  //   ]);
+
+  //   const priceStats = await this.productModel
+  //     .aggregate([
+  //       { $match: { category } },
+  //       {
+  //         $group: {
+  //           _id: null,
+  //           minPrice: { $min: '$productPrice' },
+  //           maxPrice: { $max: '$productPrice' },
+  //         },
+  //       },
+  //     ])
+  //     .exec();
+
+  //   const { minPrice = 0, maxPrice = 0 } = priceStats[0] || {};
+
+  //   return { brands, colors, materials, tags, minPrice, maxPrice };
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   async findById(id: number): Promise<Product | null> {
     return this.productModel.findOne({ id }).lean<Product | null>().exec();
@@ -38,7 +111,7 @@ export class ProductsRepository {
   }
 
   private buildFindAllQuery(query?: ProductsQueryDto): any {
-    const { category, priceRanges } = query;
+    const { category, priceRanges, colors, brands, materials } = query;
     const mongoQuery: any = {};
 
     if (category) {
@@ -52,10 +125,24 @@ export class ProductsRepository {
       });
     }
 
+    if (colors?.length) {
+      mongoQuery.colors = { $in: colors };
+    }
+
+    if (brands?.length) {
+      mongoQuery.brand = { $in: brands };
+    }
+
+    if (materials?.length) {
+      mongoQuery.material = { $in: materials };
+    }
+
     return mongoQuery;
   }
 
-
+  async countAll(filter: any = {}): Promise<number> {
+    return this.productModel.countDocuments(filter).exec();
+  }
 
   async findMany(
     filter: any,
@@ -69,6 +156,4 @@ export class ProductsRepository {
   async count(filter: any): Promise<number> {
     return this.productModel.countDocuments(filter).exec();
   }
-
-
 }

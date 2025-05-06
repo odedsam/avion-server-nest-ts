@@ -12,6 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductsQueryDto = exports.ProductCategory = void 0;
 const class_validator_1 = require("class-validator");
 const class_transformer_1 = require("class-transformer");
+const class_transformer_2 = require("class-transformer");
+const class_validator_2 = require("class-validator");
 var ProductCategory;
 (function (ProductCategory) {
     ProductCategory["PLANTS"] = "plants";
@@ -26,6 +28,9 @@ class ProductsQueryDto {
     offset;
     limit;
     priceRanges;
+    colors;
+    brands;
+    materials;
 }
 exports.ProductsQueryDto = ProductsQueryDto;
 __decorate([
@@ -50,9 +55,44 @@ __decorate([
 ], ProductsQueryDto.prototype, "sort", void 0);
 __decorate([
     (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => Number(value)),
+    (0, class_validator_2.IsNumber)(),
+    (0, class_transformer_2.Type)(() => Number),
+    __metadata("design:type", Number)
+], ProductsQueryDto.prototype, "offset", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => Number(value)),
+    (0, class_validator_2.IsNumber)(),
+    (0, class_transformer_2.Type)(() => Number),
+    __metadata("design:type", Number)
+], ProductsQueryDto.prototype, "limit", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
     (0, class_transformer_1.Transform)(({ value }) => (Array.isArray(value) ? value : [value])),
     (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], ProductsQueryDto.prototype, "priceRanges", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => (Array.isArray(value) ? value : [value])),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], ProductsQueryDto.prototype, "colors", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => (Array.isArray(value) ? value : [value])),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], ProductsQueryDto.prototype, "brands", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    (0, class_transformer_1.Transform)(({ value }) => (Array.isArray(value) ? value : [value])),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.IsString)({ each: true }),
+    __metadata("design:type", Array)
+], ProductsQueryDto.prototype, "materials", void 0);
 //# sourceMappingURL=products-query.dto.js.map
