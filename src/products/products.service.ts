@@ -104,7 +104,6 @@ export class ProductsService {
       { $project: { _id: 0, value: '$_id', count: 1 } },
     ];
 
-    // אם אין קטגוריה – נחזיר רק filtersMeta גלובלי
     if (!category) {
       const [price, colors, brands, materials, tags] = await Promise.all([
         this.productRepo.aggregateProducts(priceRangesAggregation),
@@ -119,7 +118,6 @@ export class ProductsService {
       };
     }
 
-    // אם יש קטגוריה – נחזיר גם מוצרים וגם filtersMeta מותאמים
     const [products, totalCount] = await Promise.all([
       this.productRepo.findAll(findQuery, limit, offset),
       this.productRepo.countAll(findQuery),
