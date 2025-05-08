@@ -135,7 +135,7 @@ let ProductsService = class ProductsService {
             products: sortedProducts,
             filtersMeta: {
                 price,
-                colors: colorsMeta && colorsMeta.splice(0, 25),
+                colors: colorsMeta,
                 brands: brandsMeta,
                 materials: materialsMeta,
                 tags: tagsMeta,

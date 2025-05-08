@@ -46,7 +46,7 @@ var ConfigUtil;
     ConfigUtil.AppModule = AppModule;
 })(ConfigUtil || (exports.ConfigUtil = ConfigUtil = {}));
 exports.corsOptions = {
-    origin: ['http://localhost:5173', 'https://avion-im4t17rvd-fragged-ups-projects.vercel.app/', 'https://avion-steel.vercel.app'],
+    origin: ['http://localhost:5173', 'https://avion-im4t17rvd-fragged-ups-projects.vercel.app/', 'https://avion-steel.vercel.app', 'https://avion-2ihmcp5yj-fragged-ups-projects.vercel.app/'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
     optionsSuccessStatus: 204,
