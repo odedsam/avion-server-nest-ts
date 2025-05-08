@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import * as bcrypt from 'bcryptjs';
 import { UserService } from '../user/user.service';
 import { SignUpDto } from './dto/sign-up.dto';
-import { SignInDto } from './dto/sign-in.dto';
+import { LoginDto } from './dto/login-dto';
+import * as bcrypt from 'bcryptjs';
 
 @Injectable()
 export class AuthService {
@@ -12,7 +12,6 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  // Sign up: Hash password and save user
   async signUp(signUpDto: SignUpDto) {
     const { email, password } = signUpDto;
 
@@ -22,9 +21,8 @@ export class AuthService {
     return this.generateJwt(user);
   }
 
-  // Sign in: Check if the password matches, then generate JWT
-  async signIn(signInDto: SignInDto) {
-    const { email, password } = signInDto;
+  async signIn(loginDto: LoginDto) {
+    const { email, password } = loginDto;
 
     const user = await this.userService.findByEmail(email);
     if (!user) {
@@ -39,7 +37,6 @@ export class AuthService {
     return this.generateJwt(user);
   }
 
-  // Generate JWT token
   private generateJwt(user) {
     const payload = { email: user.email, sub: user.id };
     return {

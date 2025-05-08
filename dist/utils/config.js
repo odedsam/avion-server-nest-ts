@@ -5,6 +5,8 @@ const config_1 = require("@nestjs/config");
 const mongoose_1 = require("@nestjs/mongoose");
 const products_module_1 = require("../products/products.module");
 const swagger_1 = require("@nestjs/swagger");
+const auth_module_1 = require("../auth/auth.module");
+const user_module_1 = require("../user/user.module");
 var ConfigUtil;
 (function (ConfigUtil) {
     class Origin {
@@ -41,6 +43,8 @@ var ConfigUtil;
             }),
             Mongoose.mongooseModule,
             products_module_1.ProductsModule,
+            auth_module_1.AuthModule,
+            user_module_1.UserModule
         ];
     }
     ConfigUtil.AppModule = AppModule;
