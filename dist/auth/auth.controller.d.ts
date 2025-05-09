@@ -7,7 +7,7 @@ export declare class AuthController {
     signUp(signUpDto: SignUpDto): Promise<{
         access_token: string;
     }>;
-    signIn(signInDto: LoginDto): Promise<{
+    signIn(signInDto: LoginDto): Promise<Error | {
         access_token: string;
     }>;
 }

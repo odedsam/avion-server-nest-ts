@@ -11,6 +11,6 @@ export declare class AuthService {
     }>;
     signIn(loginDto: LoginDto): Promise<{
         access_token: string;
-    }>;
+    } | Error>;
     private generateJwt;
 }

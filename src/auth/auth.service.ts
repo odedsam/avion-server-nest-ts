@@ -26,12 +26,12 @@ export class AuthService {
 
     const user = await this.userService.findByEmail(email);
     if (!user) {
-      throw new Error('Invalid credentials');
+     return new Error('Invalid credentials');
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
-      throw new Error('Invalid credentials');
+      return new Error('Invalid credentials');
     }
 
     return this.generateJwt(user);
