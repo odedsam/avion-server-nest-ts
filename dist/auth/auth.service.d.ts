@@ -9,8 +9,8 @@ export declare class AuthService {
     signUp(signUpDto: SignUpDto): Promise<{
         access_token: string;
     }>;
-    signIn(loginDto: LoginDto): Promise<{
+    signIn(loginDto: LoginDto): Promise<Error | {
         access_token: string;
-    } | Error>;
+    }>;
     private generateJwt;
 }
