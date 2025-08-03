@@ -9,13 +9,12 @@ const log_1 = require("./utils/log");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const configService = app.get(config_1.ConfigService);
-    const origin = config_2.ConfigUtil.Origin.getOriginUrl(configService);
-    const port = configService.get('PORT', 8080);
     app.enableCors(config_2.corsOptions);
     app.useGlobalPipes(new common_1.ValidationPipe());
     config_2.ConfigUtil.Swagger.init(app);
-    await app.listen(port);
-    log_1.LogUtil.report(origin, port);
+    const port = Number(process.env.PORT) || configService.get('PORT', 3000);
+    await app.listen(port, '0.0.0.0');
+    log_1.LogUtil.report(config_2.ConfigUtil.Origin.getOriginUrl(configService), port);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
