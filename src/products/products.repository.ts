@@ -74,18 +74,6 @@ export class ProductsRepository {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   async findById(id: number): Promise<Product | null> {
     return this.productModel.findOne({ id }).lean<Product | null>().exec();
   }

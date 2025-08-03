@@ -10,7 +10,7 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const configService = app.get(config_1.ConfigService);
     const origin = config_2.ConfigUtil.Origin.getOriginUrl(configService);
-    const port = configService.get('PORT', 5001);
+    const port = configService.get('PORT', 8080);
     app.enableCors(config_2.corsOptions);
     app.useGlobalPipes(new common_1.ValidationPipe());
     config_2.ConfigUtil.Swagger.init(app);
